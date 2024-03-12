@@ -25,6 +25,10 @@ export default {
         "custom-gray-09": "#131318",
         "custom-gray-10": "#08080B",
         "custom-black": "#040404",
+      },
+      fontFamily: {
+        'poppins': ['Poppins'],
+        'roboto': ['Roboto']
       }
     },
   },

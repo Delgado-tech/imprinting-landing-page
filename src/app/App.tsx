@@ -1,10 +1,12 @@
-import Logo from "../components/Logo.tsx";
+import Introduction from "../components/home/Introduction.tsx";
 
 function App() {
 	return (
-		<section>
-			<main>Olá mundo</main>
-			<Logo color="red" />
+		<section className="h-screen">
+			{/* <Logo color="red" /> */}
+			<main>
+				<Introduction />
+			</main>
 		</section>
 	);
 }
