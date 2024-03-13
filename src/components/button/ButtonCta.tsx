@@ -15,7 +15,7 @@ export default function ButtonCta({
 		<Link to={link}>
 			<button
 				className={twMerge(
-					"bg-custom-blue-02 text-white px-12 py-2 text-xl rounded-full hover:bg-custom-blue-01 transition-all font-poppins hover:scale-105 hover:shadow-md select-none",
+					"select-none rounded-full bg-custom-blue-02 px-12 py-2 font-poppins text-base text-white transition-all hover:scale-105 hover:bg-custom-blue-01 hover:shadow-md md:text-xl",
 					className,
 				)}
 			>

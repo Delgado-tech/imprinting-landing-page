@@ -15,7 +15,7 @@ export default function Introduction() {
 						promover grandes avanços em neurobiologia por meio de pesquisas em
 						Neuropsicofarmacologia e Nuroaprendizagem. 
 					</p>
-					<ButtonCta className="mt-14 text-sm md:text-xl" content="saiba mais" />
+					<ButtonCta className="mt-14" content="saiba mais" />
 				</article>
 				<figure className="flex justify-center xl:justify-end">
 					<img

@@ -22,7 +22,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -30,7 +30,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -38,7 +38,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -46,7 +46,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="5"
@@ -54,7 +54,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -62,7 +62,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -70,7 +70,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -78,7 +78,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="5"
@@ -86,7 +86,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -94,7 +94,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -102,7 +102,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -110,7 +110,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="5"
@@ -118,7 +118,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -126,7 +126,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -134,7 +134,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -142,7 +142,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="5"
@@ -150,7 +150,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -158,7 +158,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -166,7 +166,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -174,7 +174,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="5"
@@ -182,7 +182,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -190,7 +190,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -198,7 +198,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -206,7 +206,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="5"
@@ -214,7 +214,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -222,7 +222,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -230,7 +230,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -238,7 +238,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="5"
@@ -246,7 +246,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="23"
@@ -254,7 +254,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="41"
@@ -262,7 +262,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 			<ellipse
 				cx="59"
@@ -270,7 +270,7 @@ export default function DecorationDots({
 				rx="5"
 				ry="4.70205"
 				fill={color}
-				fill-opacity="1"
+				fillOpacity="1"
 			/>
 		</svg>
 	);

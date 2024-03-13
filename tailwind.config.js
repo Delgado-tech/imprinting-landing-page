@@ -10,7 +10,7 @@ export default {
         "custom-beige-01": "#FFFFE5",
         "custom-beige-02": "#F7C1A9",
         "custom-beige-03": "#F9BA84",
-        "custom-blue-01": "#4358B3",
+        "custom-blue-01": "#217AFF",
         "custom-blue-02": "#333399",
         "custom-magenta": "#917CA5",
         "custom-pink": "#FF00CC",
