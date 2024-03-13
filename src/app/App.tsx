@@ -1,4 +1,5 @@
 import Introduction from "../components/home/Introduction.tsx";
+import ImprintingCoin from "../components/home/ImprintingCoin.tsx";
 
 function App() {
 	return (
@@ -6,6 +7,7 @@ function App() {
 			{/* <Logo color="red" /> */}
 			<main>
 				<Introduction />
+				<ImprintingCoin />
 			</main>
 		</section>
 	);
