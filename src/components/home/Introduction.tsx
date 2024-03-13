@@ -27,7 +27,7 @@ export default function Introduction() {
 			<figure>
 				<img
 					src={introduction_wave}
-					className="no-select absolute bottom-0 -z-10 max-h-[250px] w-full md:relative"
+					className="no-select absolute -bottom-[1px] -z-10 max-h-[250px] w-full md:relative"
 				/>
 			</figure>
 		</section>
