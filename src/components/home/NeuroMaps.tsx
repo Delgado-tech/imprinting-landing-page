@@ -29,7 +29,7 @@ export default function NeuroMaps() {
 				</div>
 			</div>
 			<div className="px-8 max-sm:flex max-sm:justify-center lg:px-32">
-				<ul className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-8 lg:grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))]">
+				<ul className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-8 md:grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))]">
 					{resources.map((resource, index) => (
 						<li
 							key={index}
