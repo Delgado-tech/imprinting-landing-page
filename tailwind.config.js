@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        "xs": "300px"
+        "xs": "300px",
+        "2xl": "1400px"
       },
       colors: {
         "custom-beige-01": "#FFFFE5",
