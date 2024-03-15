@@ -1,4 +1,4 @@
-import { AlignJustify } from "lucide-react";
+import { AlignJustify, X } from "lucide-react";
 import { useState } from "react";
 import Logo from "../Logo";
 import NavBar from "./NavBar";
@@ -20,7 +20,11 @@ export default function Header() {
 						</span>
 					</a>
 					<AlignJustify
-						className="max-xs:size-6 size-8 cursor-pointer select-none text-white transition-none hover:text-zinc-300 sm:hidden"
+						className="max-xs:size-6 size-8 cursor-pointer select-none text-white transition-none hover:text-zinc-300 group-data-[open-hamburger=true]:hidden sm:hidden"
+						onClick={() => SetShowNavItems((prev) => (prev = !prev))}
+					/>
+					<X
+						className="max-xs:size-6 size-8 cursor-pointer select-none text-white transition-none hover:text-zinc-300 group-data-[open-hamburger=false]:hidden sm:hidden"
 						onClick={() => SetShowNavItems((prev) => (prev = !prev))}
 					/>
 				</div>
