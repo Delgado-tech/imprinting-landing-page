@@ -33,7 +33,7 @@ export default function Purpose() {
 
 	return (
 		<section className="mb-10 flex flex-col items-center gap-8 p-5 px-8 lg:px-32 xl:items-start">
-			<h2 className="max-w-[400px] text-center font-roboto text-3xl font-semibold text-custom-gray-06 md:text-5xl xl:text-start">
+			<h2 className="text-center font-roboto text-3xl font-semibold text-custom-gray-06 md:text-5xl xl:text-start">
 				Nosso Propósito
 			</h2>
 			<p className="max-w-[1000px] text-center text-lg text-custom-black md:text-2xl xl:text-start">
