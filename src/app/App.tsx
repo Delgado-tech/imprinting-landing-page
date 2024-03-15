@@ -1,3 +1,4 @@
+import FormContact from "../components/home/FormContact.tsx";
 import ImprintingCoin from "../components/home/ImprintingCoin.tsx";
 import Introduction from "../components/home/Introduction.tsx";
 import NeuroMaps from "../components/home/NeuroMaps.tsx";
@@ -12,6 +13,7 @@ function App() {
 				<NeuroMaps />
 				<ProgramIAM />
 				<ImprintingCoin />
+				<FormContact />
 			</main>
 		</section>
 	);
