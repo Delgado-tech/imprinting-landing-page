@@ -12,7 +12,7 @@ export default function NeuroMaps() {
 	];
 
 	return (
-		<section>
+		<section className="mt-64">
 			<div className="flex justify-center">
 				<div className="relative mb-12 flex w-fit flex-col items-center">
 					<Decoration.Waves className="absolute -left-28 -top-[70%] z-10 scale-[25%] sm:-left-32 sm:scale-50 xl:scale-75" />

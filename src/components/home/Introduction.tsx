@@ -4,7 +4,7 @@ import ButtonCta from "../button/ButtonCta";
 
 export default function Introduction() {
 	return (
-		<section className="relative z-10 h-max bg-gradient-to-bl from-custom-blue-02 via-custom-magenta to-custom-beige-02 to-40% pt-32 xl:to-60%">
+		<section className="relative z-10 h-max bg-gradient-to-bl from-custom-blue-02 via-custom-magenta to-custom-beige-02 to-40% pt-40 xl:to-60%">
 			<div className="relative flex flex-col gap-16 pb-32 pt-16 md:pb-16 xl:flex-row">
 				<article className="flex flex-col items-center gap-8 px-8 lg:px-32 xl:items-start">
 					<h1 className="max-w-[400px] text-center font-roboto text-3xl font-semibold text-custom-gray-06 md:max-w-[700px] md:text-5xl xl:text-start">

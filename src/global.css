@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 .no-select {
 	user-drag: none;
 	-webkit-user-drag: none;

@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "xs": "300px"
+      },
       colors: {
         "custom-beige-01": "#FFFFE5",
         "custom-beige-02": "#F7C1A9",
@@ -29,6 +32,15 @@ export default {
       fontFamily: {
         'poppins': ['Poppins'],
         'roboto': ['Roboto']
+      },
+      animation: {
+        linearShow: "linearShow .3s ease-in"
+      },
+      keyframes: {
+        linearShow: {
+          "0%": { width: "0%", opacity: "40%" },
+          "100%": { width: "100%", opacity: "100%" }
+        }
       }
     },
   },
