@@ -1,3 +1,4 @@
+import Footer from "../components/home/Footer.tsx";
 import FormContact from "../components/home/FormContact.tsx";
 import Header from "../components/home/Header.tsx";
 import ImprintingCoin from "../components/home/ImprintingCoin.tsx";
@@ -19,6 +20,7 @@ function App() {
 				<ProgramIAM />
 				<ImprintingCoin />
 				<FormContact />
+				<Footer />
 				<span id={"bottom"} />
 			</main>
 		</section>
