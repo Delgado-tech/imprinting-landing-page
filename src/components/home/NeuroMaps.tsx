@@ -29,11 +29,11 @@ export default function NeuroMaps() {
 				</div>
 			</div>
 			<div className="px-8 max-sm:flex max-sm:justify-center lg:px-32">
-				<ul className="grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] gap-8 md:grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))]">
+				<ul className="grid gap-8 xs:grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] md:grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] xl:grid-cols-[repeat(auto-fit,_minmax(400px,_1fr))]">
 					{resources.map((resource, index) => (
 						<li
 							key={index}
-							className="flex gap-2 text-3xl text-custom-gray-09 max-xl:text-2xl max-sm:text-lg"
+							className="flex gap-2 text-3xl text-custom-gray-09 max-xl:text-2xl max-sm:items-center max-sm:text-lg max-xs:flex-col max-xs:justify-center max-xs:text-center"
 						>
 							<BadgeCheck className="min-h-6 min-w-6 translate-y-[2px] text-custom-blue-02 sm:min-h-8 sm:min-w-8 xl:translate-y-1" />
 							{resource}

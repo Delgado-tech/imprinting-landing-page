@@ -24,10 +24,12 @@ export default function Card({
 			) : (
 				<>
 					<figure className="text-custom-blue-02">{icon}</figure>
-					<span className="text-center font-poppins text-2xl font-medium text-custom-blue-02 max-md:text-lg">
+					<span className="text-center font-poppins text-2xl font-medium text-custom-blue-02 max-md:text-lg max-xs:text-sm">
 						{title}
 					</span>
-					<span className="text-center text-2xl max-md:text-base">{content}</span>
+					<span className="break-words text-center text-2xl max-md:text-base max-xs:text-sm">
+						{content}
+					</span>
 				</>
 			)}
 		</div>

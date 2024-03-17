@@ -17,17 +17,17 @@ export default function Footer() {
 
 	const socialMedia: ISocialMedia[] = [
 		{
-			name: "instagram",
+			name: "Instagram",
 			icon: <FaInstagram className={socialMediaIconStyle} />,
 			link: "https://www.instagram.com/imprinting_dao/",
 		},
 		{
-			name: "linkedIn",
+			name: "LinkedIn",
 			icon: <FaLinkedin className={socialMediaIconStyle} />,
 			link: "https://www.linkedin.com/company/imprintingdao/",
 		},
 		{
-			name: "youtube",
+			name: "Youtube",
 			icon: <FaYoutube className={socialMediaIconStyle} />,
 			link: "https://www.youtube.com/@ImprintingDeepTech",
 		},
@@ -35,10 +35,10 @@ export default function Footer() {
 
 	return (
 		<section className="bg-custom-black-02 p-8 font-poppins text-xl text-custom-gray-03 max-sm:text-sm">
-			<footer className="flex items-center justify-between gap-16 max-md:flex-col">
+			<footer className="flex items-center justify-between gap-16 max-md:flex-col max-sm:items-start">
 				<div className="flex flex-col items-start gap-4 max-md:items-center max-sm:items-start">
 					<span className="flex items-center gap-2">
-						<span className="text-lg text-custom-gray-07">
+						<span className="text-lg text-custom-gray-07 max-sm:text-sm">
 							Copyright © {currentYear} Imprinting
 						</span>
 					</span>
@@ -50,7 +50,7 @@ export default function Footer() {
 							target="_blank"
 							className="group/phone"
 						>
-							<span className="rounded-lg bg-custom-gray-09 p-1 text-lg text-custom-gray-02 max-sm:text-sm">
+							<span className="rounded-lg bg-custom-gray-09 p-1 text-lg font-medium text-custom-gray-02 max-sm:text-sm">
 								+55
 							</span>{" "}
 							<span className="text-custom-gray-01 underline-offset-2 transition-all group-hover/phone:text-white group-hover/phone:underline">
@@ -75,7 +75,7 @@ export default function Footer() {
 					<div className="flex gap-4 max-md:justify-center">
 						{socialMedia.map((item, index) => (
 							<a key={index} href={item.link} target="_blank">
-								{item.icon}
+								<figure title={item.name}>{item.icon}</figure>
 							</a>
 						))}
 					</div>

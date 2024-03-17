@@ -1,5 +1,5 @@
 import Footer from "../components/home/Footer.tsx";
-import FormContact from "../components/home/FormContact.tsx";
+import FormSection from "../components/home/FormSection.tsx";
 import Header from "../components/home/Header.tsx";
 import ImprintingCoin from "../components/home/ImprintingCoin.tsx";
 import Introduction from "../components/home/Introduction.tsx";
@@ -9,19 +9,16 @@ import Purpose from "../components/home/Purpose.tsx";
 
 function App() {
 	return (
-		<section className="h-screen">
-			{/* <Logo color="red" /> */}
+		<section>
 			<main>
-				<span id={"top"} />
 				<Header />
 				<Introduction />
 				<Purpose />
 				<NeuroMaps />
 				<ProgramIAM />
 				<ImprintingCoin />
-				<FormContact />
+				<FormSection />
 				<Footer />
-				<span id={"bottom"} />
 			</main>
 		</section>
 	);

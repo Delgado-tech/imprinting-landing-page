@@ -36,7 +36,7 @@ export default function NavBar() {
 						>
 							{item.content}
 						</Link>
-						<span className="group-hover/item:animate-linearShow absolute bottom-0 left-0 hidden h-[1px] w-full bg-zinc-400 group-hover/item:block" />
+						<span className="absolute bottom-0 left-0 hidden h-[1px] w-full bg-zinc-400 group-hover/item:block group-hover/item:animate-linearShow" />
 					</li>
 				))}
 			</ul>
