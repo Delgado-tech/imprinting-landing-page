@@ -29,6 +29,7 @@ export default {
         "custom-gray-09": "#131318",
         "custom-gray-10": "#08080B",
         "custom-black": "#040404",
+        "custom-black-02": "#020202",
       },
       fontFamily: {
         'poppins': ['Poppins'],
