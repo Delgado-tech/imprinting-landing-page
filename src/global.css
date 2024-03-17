@@ -17,3 +17,8 @@ html {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
+
+.dark-overflow-auto {
+	@apply overflow-auto;
+	scrollbar-color: #2e2e38 #08080b;
+}
