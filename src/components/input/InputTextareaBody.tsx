@@ -17,6 +17,7 @@ export default function InputTextareaBody({
 	rows = 4,
 	onKeyDown,
 	onFocus,
+	onBlur,
 	className,
 	minLength,
 	maxLength,
@@ -37,7 +38,7 @@ export default function InputTextareaBody({
 	return (
 		<div
 			data-disabled={disabled}
-			className="data-disabled rounded-lg border border-zinc-400 pt-1 data-[disabled=true]:bg-zinc-100"
+			className="data-disabled rounded-lg border border-zinc-400 pt-1 data-[disabled=true]:bg-zinc-100 group-data-[focus=true]/textarea:border-custom-blue-01"
 		>
 			<textarea
 				id={id}
@@ -47,6 +48,7 @@ export default function InputTextareaBody({
 				onChange={onChange}
 				onKeyDown={onKeyDown}
 				onFocus={onFocus}
+				onBlur={onBlur}
 				placeholder={placeholder}
 				minLength={minLength}
 				maxLength={maxLength}

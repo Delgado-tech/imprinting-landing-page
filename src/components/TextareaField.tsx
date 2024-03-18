@@ -51,6 +51,8 @@ export default function TextareaField({
 					className="dark-overflow-auto text-white"
 					placeholder={placeholder}
 					onChange={(e) => setInput(regexFC(e.target.value))}
+					onFocus={() => setFocus(true)}
+					onBlur={() => setFocus(false)}
 					value={input}
 					rows={rows}
 					minLength={minLength}

@@ -26,10 +26,10 @@ export default function Header() {
 				<div className="flex select-none flex-wrap items-center justify-between gap-x-8 gap-y-2 max-sm:w-full max-xs:justify-center">
 					<a
 						href={"#top"}
-						className="flex cursor-pointer items-center"
+						className="flex cursor-pointer items-center gap-2"
 						onClick={() => setShowNavItems(false)}
 					>
-						<Logo color="white" className="size-10 max-xs:size-8" />
+						<Logo color="white" className="no-select size-10 max-xs:size-8" />
 						<span className="font-poppins text-2xl font-medium uppercase text-white max-xs:text-xl">
 							Imprinting
 						</span>
