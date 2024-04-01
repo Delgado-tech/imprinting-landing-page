@@ -29,12 +29,14 @@ export default function InputField({
 	required = false,
 }: Props) {
 	const [input, setInput] = useState<string>(defaultValue);
+	const [isFocus, setIsFocus] = useState<boolean>(false);
 
 	return (
 		<Input.Root>
 			{!placeholder && (
 				<Input.LabelToTop
 					ltToggle={input.length > 0}
+					isFocus={input.length > 0 && isFocus}
 					label={label}
 					htmlFor={id}
 					invalid={invalid}
@@ -49,6 +51,8 @@ export default function InputField({
 				placeholder={placeholder}
 				className="text-white"
 				onChange={(e) => setInput(regexFC(e.target.value))}
+				onFocus={() => setIsFocus(true)}
+				onBlur={() => setIsFocus(false)}
 				value={input}
 				minLength={minLength}
 				invalid={invalid}

@@ -12,10 +12,10 @@ export default function Introduction() {
 					<h1 className="max-w-[400px] text-center font-roboto text-3xl font-semibold text-custom-gray-06 max-xs:text-2xl md:max-w-[700px] md:text-5xl xl:text-start">
 						Revolucionando a Pesquisa Científica e Desenvolvimento Humano
 					</h1>
-					<p className="max-w-[700px] text-center text-lg text-custom-gray-04 md:text-2xl xl:text-start">
-						Somos uma startup de DeepTech empenhada em impulsionar a inovação e
-						promover grandes avanços em neurobiologia por meio de pesquisas em
-						Neuropsicofarmacologia e Nuroaprendizagem. 
+					<p className="max-w-[700px] text-balance text-center text-lg text-custom-gray-04 md:text-2xl xl:text-start">
+						Somos uma DAO dedicada à inovação em neurobiologia, promovendo avanços em
+						neuropsicofarmacologia e neuroaprendizagem por meio de colaboração
+						descentralizada e governança autônoma.
 					</p>
 					<ButtonCta className="mt-14" content="saiba mais" />
 				</article>

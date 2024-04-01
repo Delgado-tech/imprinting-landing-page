@@ -17,6 +17,7 @@ export default function InputBody({
 	onChange,
 	onKeyDown,
 	onFocus,
+	onBlur,
 	onClick,
 	className,
 	minLength,
@@ -34,6 +35,7 @@ export default function InputBody({
 			onChange={onChange}
 			onKeyDown={onKeyDown}
 			onFocus={onFocus}
+			onBlur={onBlur}
 			onClick={onClick}
 			data-invalid={invalid}
 			spellCheck={false}
