@@ -45,7 +45,7 @@ export default function InputBody({
 			className={twMerge(
 				`w-full rounded-lg border border-zinc-400 bg-transparent px-4 py-3 text-lg text-zinc-600 outline-none 
 				transition-colors placeholder:font-medium placeholder:text-zinc-500 focus:border-custom-blue-01
-				disabled:bg-zinc-100 data-[invalid=true]:border-red-400
+				disabled:bg-custom-gray-08 disabled:text-zinc-500 data-[invalid=true]:border-red-400
 				data-[invalid=true]:focus:border-red-500 max-sm:text-base`,
 				className,
 			)}

@@ -16,7 +16,7 @@ interface Props extends ComponentProps<"input"> {
 
 export default function InputField({
 	id,
-	name,
+	name = id,
 	type = "text",
 	label = id,
 	labelColor,

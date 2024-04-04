@@ -19,7 +19,7 @@ export default function SelectInput({
 	id,
 	options,
 	actionInputValue = () => {},
-	name,
+	name = id,
 	label,
 	labelColor,
 	defaultValue,
@@ -54,6 +54,7 @@ export default function SelectInput({
 			<div ref={divRef}>
 				<div
 					onClick={() => {
+						if (disabled) return;
 						setShowDropDown((prev) => !prev);
 					}}
 				>
@@ -91,6 +92,7 @@ export default function SelectInput({
 							/>
 						}
 						action={() => {
+							if (disabled) return;
 							if (!showDropDown) {
 								const input = divRef.current!.querySelector(
 									"input",

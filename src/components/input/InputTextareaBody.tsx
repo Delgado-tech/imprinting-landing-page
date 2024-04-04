@@ -38,7 +38,7 @@ export default function InputTextareaBody({
 	return (
 		<div
 			data-disabled={disabled}
-			className="data-disabled rounded-lg border border-zinc-400 pt-1 data-[disabled=true]:bg-zinc-100 group-data-[focus=true]/textarea:border-custom-blue-01"
+			className="data-disabled rounded-lg border border-zinc-400 pt-1 data-[disabled=true]:bg-custom-gray-08 group-data-[focus=true]/textarea:border-custom-blue-01"
 		>
 			<textarea
 				id={id}
@@ -58,7 +58,7 @@ export default function InputTextareaBody({
 				className={twMerge(
 					`w-full resize-none rounded-lg bg-transparent px-4 py-2 text-lg text-zinc-600 outline-none
                     transition-colors placeholder:text-lg placeholder:font-medium placeholder:text-zinc-500
-                    data-[invalid=true]:border-red-400 data-[invalid=true]:focus:border-red-500`,
+                    disabled:text-zinc-500 data-[invalid=true]:border-red-400 data-[invalid=true]:focus:border-red-500`,
 					className,
 				)}
 				required={required}

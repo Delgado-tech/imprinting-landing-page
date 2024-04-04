@@ -23,14 +23,14 @@ export default function InputStaticText({
 			data-invalid={invalid}
 			data-focus={isFocus}
 			className={twMerge(
-				`min-h-[50px] w-full rounded-lg border border-zinc-400 bg-transparent px-4 py-3 text-zinc-600
-					transition-colors data-[focus=true]:border-custom-blue-01
-					data-[invalid=true]:border-red-400
-					data-[disabled=true]:bg-zinc-100 data-[invalid=true]:focus:border-red-500`,
+				`min-h-[50px] w-full rounded-lg border border-zinc-400 bg-transparent px-4 py-3
+					text-custom-beige-02 transition-colors data-[focus=true]:border-custom-blue-01
+					data-[invalid=true]:border-red-400 data-[disabled=true]:bg-custom-gray-08
+					data-[disabled=true]:text-zinc-500 data-[invalid=true]:focus:border-red-500`,
 				className,
 			)}
 		>
-			<span className="font-medium text-custom-beige-02">{value}</span>
+			<span className="font-medium">{value}</span>
 			<input
 				id={id}
 				name={name}

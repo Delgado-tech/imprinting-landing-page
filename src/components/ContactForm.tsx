@@ -1,4 +1,7 @@
-import React from "react";
+import emailjs from "@emailjs/browser";
+import dFormat from "dateformat";
+import { Loader2Icon, MailCheckIcon } from "lucide-react";
+import React, { useState } from "react";
 import { RegexTemplate } from "../utils/regex";
 import InputField from "./InputField";
 import SelectInput from "./SelectInput";
@@ -6,14 +9,40 @@ import TextareaField from "./TextareaField";
 import ButtonType from "./button/ButtonType";
 
 export default function ContactForm() {
+	const [isSended, setIsSended] = useState<boolean>(false);
+	const [isLoading, setIsLoading] = useState<boolean>(false);
+
 	const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
+
+		if (isLoading) return;
+
+		setIsLoading(true);
+		const send_datetime = dFormat(new Date(), "dd/mm/yyyy HH:MM:ss");
+
 		const form = event.target as HTMLFormElement;
 		const formData = new FormData(form);
+		const formDataEntries = Object.fromEntries(formData);
+		const data = { ...formDataEntries, send_datetime };
 
-		for (const [key, value] of formData) {
-			console.log(`${key}: ${value}`);
-		}
+		emailjs
+			.send(
+				import.meta.env.VITE_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+				data,
+				{
+					publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+				},
+			)
+			.then(() => {
+				setIsLoading(false);
+				setIsSended(true);
+			})
+			.catch(() => {
+				alert(
+					"Houve um problema ao tentar enviar o formulário, tente novamente mais tarde!",
+				);
+			});
 	};
 
 	return (
@@ -26,9 +55,10 @@ export default function ContactForm() {
 			</h1>
 
 			<SelectInput
-				id={"sender"}
+				id={"interested_type"}
 				label={"Interessado"}
 				labelColor={"bg-custom-gray-10"}
+				disabled={isSended}
 				options={["Paciente", "Médico", "Investidor", "Pesquisador"]}
 			/>
 
@@ -37,6 +67,7 @@ export default function ContactForm() {
 					id={"name"}
 					label={"Nome"}
 					labelColor={"bg-custom-gray-10"}
+					disabled={isSended}
 					required
 				/>
 				<InputField
@@ -44,6 +75,7 @@ export default function ContactForm() {
 					label={"E-mail"}
 					type={"email"}
 					labelColor={"bg-custom-gray-10"}
+					disabled={isSended}
 					required
 				/>
 				<InputField
@@ -51,6 +83,7 @@ export default function ContactForm() {
 					label={"Celular"}
 					labelColor={"bg-custom-gray-10"}
 					regexFC={RegexTemplate.Cel}
+					disabled={isSended}
 					required
 				/>
 				<TextareaField
@@ -58,16 +91,26 @@ export default function ContactForm() {
 					label={"Mensagem"}
 					labelColor={"bg-custom-gray-10"}
 					maxLength={256}
+					disabled={isSended}
 					required
 				/>
 			</div>
 
 			<div className="flex justify-center">
-				<ButtonType
-					content={"Enviar"}
-					type={"submit"}
-					className="bg-custom-pink text-white"
-				/>
+				{!isSended ? (
+					<ButtonType
+						type={"submit"}
+						disabled={isLoading}
+						className="bg-custom-pink text-white"
+					>
+						{isLoading ? <Loader2Icon className="animate-spin" /> : "Enviar"}
+					</ButtonType>
+				) : (
+					<p className="flex items-center gap-2 text-2xl text-emerald-500">
+						<MailCheckIcon className="translate-y-[2px]" />
+						Dados enviados com sucesso!
+					</p>
+				)}
 			</div>
 		</form>
 	);

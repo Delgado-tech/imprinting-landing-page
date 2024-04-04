@@ -16,7 +16,7 @@ interface Props extends ComponentProps<"textarea"> {
 
 export default function TextareaField({
 	id,
-	name,
+	name = id,
 	label = id,
 	labelColor,
 	defaultValue = "",
@@ -39,6 +39,7 @@ export default function TextareaField({
 					<Input.LabelToTop
 						ltToggle={input.length > 0}
 						label={label}
+						isFocus={focus}
 						htmlFor={id}
 						invalid={invalid}
 						labelColor={labelColor}
