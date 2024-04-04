@@ -7,6 +7,8 @@ import InputField from "./InputField";
 import SelectInput from "./SelectInput";
 import TextareaField from "./TextareaField";
 import ButtonType from "./button/ButtonType";
+import "../controllers/LocalStorageController"
+import LocalStorageControllers from "../controllers/LocalStorageController";
 
 export default function ContactForm() {
 	const [isSended, setIsSended] = useState<boolean>(false);
@@ -15,34 +17,39 @@ export default function ContactForm() {
 	const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
-		if (isLoading) return;
+		if (LocalStorageControllers.checkTime()) {
+			if (isLoading) return;
 
-		setIsLoading(true);
-		const send_datetime = dFormat(new Date(), "dd/mm/yyyy HH:MM:ss");
 
-		const form = event.target as HTMLFormElement;
-		const formData = new FormData(form);
-		const formDataEntries = Object.fromEntries(formData);
-		const data = { ...formDataEntries, send_datetime };
+			setIsLoading(true);
+			const send_datetime = dFormat(new Date(), "dd/mm/yyyy HH:MM:ss");
 
-		emailjs
-			.send(
-				import.meta.env.VITE_EMAILJS_SERVICE_ID,
-				import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-				data,
-				{
-					publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-				},
-			)
-			.then(() => {
-				setIsLoading(false);
-				setIsSended(true);
-			})
-			.catch(() => {
-				alert(
-					"Houve um problema ao tentar enviar o formulário, tente novamente mais tarde!",
-				);
-			});
+			const form = event.target as HTMLFormElement;
+			const formData = new FormData(form);
+			const formDataEntries = Object.fromEntries(formData);
+			const data = { ...formDataEntries, send_datetime };
+
+			emailjs
+				.send(
+					import.meta.env.VITE_EMAILJS_SERVICE_ID,
+					import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+					data,
+					{
+						publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+					},
+				)
+				.then(() => {
+					setIsLoading(false);
+					setIsSended(true);
+				})
+				.catch(() => {
+					alert(
+						"Houve um problema ao tentar enviar o formulário, tente novamente mais tarde!",
+					);
+				});
+		} else {
+			alert(`Ainda não é possível enviar um novo e-mail, tempo restante: ${LocalStorageControllers.time()} minutos`);
+		}
 	};
 
 	return (
