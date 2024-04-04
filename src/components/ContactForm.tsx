@@ -55,7 +55,7 @@ export default function ContactForm() {
 	return (
 		<form
 			onSubmit={onSubmit}
-			className="flex w-full max-w-[600px] flex-col gap-8 rounded-3xl bg-custom-gray-10 px-8 py-11 max-sm:px-3"
+			className="flex w-full max-w-[600px] flex-col gap-8 rounded-3xl bg-custom-gray-09 px-8 py-11 max-sm:px-3"
 		>
 			<h1 className="mx-3 font-poppins text-5xl text-white max-xl:text-3xl max-sm:text-2xl">
 				Contato
