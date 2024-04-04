@@ -32,11 +32,11 @@ export default function NavBar() {
 					<li key={index} className="group/item relative">
 						<Link
 							to={item.link}
-							className="font-poppins text-lg uppercase text-white transition-all hover:text-zinc-300 xl:text-xl"
+							className="font-poppins text-lg uppercase text-custom-gray-06 transition-all hover:text-custom-gray-02 xl:text-xl"
 						>
 							{item.content}
 						</Link>
-						<span className="absolute bottom-0 left-0 hidden h-[1px] w-full bg-zinc-400 group-hover/item:block group-hover/item:animate-linearShow" />
+						<span className="absolute bottom-0 left-0 hidden h-[1px] w-full bg-custom-gray-01 group-hover/item:block group-hover/item:animate-linearShow" />
 					</li>
 				))}
 			</ul>

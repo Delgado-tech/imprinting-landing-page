@@ -9,7 +9,7 @@ export default function ImprintingCoin() {
 			<figure>
 				<img src={wave} className="max-h-[150px] w-full translate-y-1" />
 			</figure>
-			<div className="relative z-10 overflow-hidden bg-custom-gray-09 px-8 pb-24 pt-36 sm:pb-80 lg:px-32">
+			<div className="relative z-10 overflow-hidden bg-custom-gray-08 px-8 pb-24 pt-36 sm:pb-80 lg:px-32">
 				<div className="flex flex-col-reverse gap-x-16 gap-y-8 lg:grid lg:grid-cols-[auto_1fr]">
 					<article className="flex flex-col items-center justify-center gap-8 xl:items-center xl:pr-32">
 						<h2 className="max-w-[1200px] pb-8 text-center font-poppins text-6xl font-semibold text-custom-beige-03 max-xl:text-5xl max-sm:text-3xl">

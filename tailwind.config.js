@@ -17,6 +17,7 @@ export default {
         "custom-blue-01": "#217AFF",
         "custom-blue-02": "#333399",
         "custom-magenta": "#917CA5",
+        "custom-magenta-02": "#9343B3",
         "custom-pink": "#FF00CC",
         "custom-gray-01": "#C2C2CA",
         "custom-gray-02": "#7C7C85",
