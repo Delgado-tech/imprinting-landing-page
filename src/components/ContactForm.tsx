@@ -57,7 +57,7 @@ export default function ContactForm() {
 			<SelectInput
 				id={"interested_type"}
 				label={"Interessado"}
-				labelColor={"bg-custom-gray-10"}
+				labelColor={"bg-custom-gray-08"}
 				disabled={isSended}
 				options={["Paciente", "Médico", "Investidor", "Pesquisador"]}
 			/>
@@ -66,7 +66,7 @@ export default function ContactForm() {
 				<InputField
 					id={"name"}
 					label={"Nome"}
-					labelColor={"bg-custom-gray-10"}
+					labelColor={"bg-custom-gray-08"}
 					disabled={isSended}
 					required
 				/>
@@ -74,14 +74,14 @@ export default function ContactForm() {
 					id={"email"}
 					label={"E-mail"}
 					type={"email"}
-					labelColor={"bg-custom-gray-10"}
+					labelColor={"bg-custom-gray-08"}
 					disabled={isSended}
 					required
 				/>
 				<InputField
 					id={"cel"}
 					label={"Celular"}
-					labelColor={"bg-custom-gray-10"}
+					labelColor={"bg-custom-gray-08"}
 					regexFC={RegexTemplate.Cel}
 					disabled={isSended}
 					required
@@ -89,7 +89,7 @@ export default function ContactForm() {
 				<TextareaField
 					id={"message"}
 					label={"Mensagem"}
-					labelColor={"bg-custom-gray-10"}
+					labelColor={"bg-custom-gray-08"}
 					maxLength={256}
 					disabled={isSended}
 					required
