@@ -11,7 +11,7 @@ export default function IntroductionBanner() {
 						<figure>
 							<img
 								src={sprout}
-								className="left-0 max-h-[200px] w-full max-w-[200px]"
+								className="no-select left-0 max-h-[200px] w-full max-w-[200px]"
 							/>
 						</figure>
 						<div>

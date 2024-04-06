@@ -1,5 +1,6 @@
-import { BadgeCheck } from "lucide-react";
+import { LucideCheckCircle2 } from "lucide-react";
 import ilustration from "../../../assets/woman_meditating.png";
+import ListItems from "../../ListItems";
 
 export default function ProgramDestination() {
 	const listItems = [
@@ -31,17 +32,8 @@ export default function ProgramDestination() {
 						O programa é destinado para pessoas que sofrem de diversos tipos de
 						condições de saúde, tais como:
 					</p>
-					<ul className="flex flex-col gap-4">
-						{listItems.map((item, index) => (
-							<li
-								key={index}
-								className="flex items-start gap-2 text-xl max-sm:text-lg"
-							>
-								<BadgeCheck className="translate-y-[4px] text-custom-blue-02 max-sm:max-w-6 max-xs:max-w-4" />
-								<span className="text-blue-950">{item}</span>
-							</li>
-						))}
-					</ul>
+
+					<ListItems items={listItems} icon={<LucideCheckCircle2 />} />
 				</article>
 			</div>
 			<figure>

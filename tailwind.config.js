@@ -11,6 +11,11 @@ export default {
         "2xl": "1400px"
       },
       colors: {
+        "custom-pastel-blue": "#C7CBE1",
+        "custom-pastel-blue-02": "#AEB0D1",
+        "custom-pastel-green": "#C7E0E1",
+        "custom-pastel-pink": "#E1C7DF",
+        "custom-pastel-orange": "#E1C7C7",
         "custom-beige-01": "#FFFFE5",
         "custom-beige-02": "#F7C1A9",
         "custom-beige-03": "#F9BA84",
