@@ -1,6 +1,6 @@
 import { BadgeCheck } from "lucide-react";
-import TextLink from "../TextLink";
-import Decoration from "../decorations";
+import TextLink from "../../TextLink";
+import Decoration from "../../decorations";
 
 export default function NeuroMaps() {
 	const resources = [

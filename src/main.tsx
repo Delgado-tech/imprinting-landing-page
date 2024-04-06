@@ -1,13 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import App from "./app/App.tsx";
+import HomePage from "./app/home/Home.tsx";
+import ProgramIAMPage from "./app/programa_eu_sou/ProgramIAM.tsx";
 import "./globals.css";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <App />,
+		element: <HomePage />,
+	},
+	{
+		path: "/eu-sou",
+		element: <ProgramIAMPage />,
 	},
 ]);
 

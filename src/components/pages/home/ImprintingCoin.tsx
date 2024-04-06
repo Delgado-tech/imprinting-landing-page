@@ -1,7 +1,7 @@
-import coin from "../../assets/coin.png";
-import wave from "../../assets/waves/coin_wave.png";
-import ButtonCta from "../button/ButtonCta";
-import Decoration from "../decorations";
+import coin from "../../../assets/coin.png";
+import wave from "../../../assets/waves/coin_wave.png";
+import ButtonCta from "../../button/ButtonCta";
+import Decoration from "../../decorations";
 
 export default function ImprintingCoin() {
 	return (

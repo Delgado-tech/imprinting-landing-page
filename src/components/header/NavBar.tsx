@@ -9,7 +9,7 @@ export default function NavBar() {
 	const navItems: INavItems[] = [
 		{
 			content: "Home",
-			link: "",
+			link: "/",
 		},
 		{
 			content: "Neuro Maps",
@@ -17,7 +17,7 @@ export default function NavBar() {
 		},
 		{
 			content: "Programa Eu Sou",
-			link: "",
+			link: "/eu-sou",
 		},
 		{
 			content: "Contato",

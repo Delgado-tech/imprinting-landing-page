@@ -1,11 +1,11 @@
-import brain from "../../assets/cerebro.png";
-import introduction_wave from "../../assets/waves/introduction_wave.png";
-import ButtonCta from "../button/ButtonCta";
-import Decoration from "../decorations";
+import brain from "../../../assets/cerebro.png";
+import introduction_wave from "../../../assets/waves/introduction_wave.png";
+import ButtonCta from "../../button/ButtonCta";
+import Decoration from "../../decorations";
 
 export default function Introduction() {
 	return (
-		<section className="to-custom-magenta-02 relative z-10 h-max bg-gradient-to-bl from-custom-blue-02 to-40% pt-40 xl:to-70%">
+		<section className="relative z-10 h-max bg-gradient-to-bl from-custom-blue-02 to-custom-magenta-02 to-40% pt-40 xl:to-70%">
 			<Decoration.ArrowDots className="absolute right-5 -rotate-90 max-md:top-52 max-sm:top-40 max-sm:size-6" />
 			<div className="relative flex flex-col gap-16 pb-32 pt-28 md:pb-16 xl:flex-row xl:pt-16">
 				<article className="flex flex-col items-center gap-8 px-8 lg:px-32 xl:items-start">

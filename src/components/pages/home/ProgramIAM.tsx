@@ -1,6 +1,6 @@
-import sprout from "../../assets/planta1.png";
-import ButtonCta from "../button/ButtonCta";
-import Decoration from "../decorations";
+import sprout from "../../../assets/planta1.png";
+import ButtonCta from "../../button/ButtonCta";
+import Decoration from "../../decorations";
 
 export default function ProgramIAM() {
 	return (

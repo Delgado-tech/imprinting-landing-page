@@ -4,7 +4,7 @@ import {
 	SearchIcon,
 	UsersIcon,
 } from "lucide-react";
-import Card, { Props as ICard } from "../Card";
+import Card, { Props as ICard } from "../../Card";
 
 export default function Purpose() {
 	const cards: ICard[] = [
