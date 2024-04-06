@@ -1,4 +1,4 @@
-import brain from "../../../assets/cerebro.png";
+import brain from "../../../assets/brain.png";
 import introduction_wave from "../../../assets/waves/introduction_wave.png";
 import ButtonCta from "../../button/ButtonCta";
 import Decoration from "../../decorations";

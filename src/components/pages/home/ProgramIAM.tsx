@@ -1,4 +1,4 @@
-import sprout from "../../../assets/planta1.png";
+import sprout from "../../../assets/sprout.png";
 import ButtonCta from "../../button/ButtonCta";
 import Decoration from "../../decorations";
 

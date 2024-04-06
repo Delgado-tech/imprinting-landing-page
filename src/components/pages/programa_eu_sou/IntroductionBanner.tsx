@@ -1,4 +1,4 @@
-import sprout from "../../../assets/planta1.png";
+import sprout from "../../../assets/sprout.png";
 import Decoration from "../../decorations";
 
 export default function IntroductionBanner() {
