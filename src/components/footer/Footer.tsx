@@ -68,6 +68,9 @@ export default function Footer() {
 							contact@institutoimprinting.com.br
 						</a>
 					</span>
+					<a href="https://storyset.com/work" target="_blank" className="text-sm">
+						Work illustrations by Storyset
+					</a>
 				</div>
 
 				<div className="flex flex-col gap-2">

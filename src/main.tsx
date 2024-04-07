@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./app/home/Home.tsx";
 import ProgramIAMPage from "./app/programa_eu_sou/ProgramIAM.tsx";
-import BreakpointsHighlight from "./components/tools/BreakpointsHighlight.tsx";
 import "./globals.css";
 
 const router = createBrowserRouter([
@@ -19,7 +18,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
-		<BreakpointsHighlight />
+		{/* <BreakpointsHighlight /> */}
 		<RouterProvider router={router} />
 	</React.StrictMode>,
 );

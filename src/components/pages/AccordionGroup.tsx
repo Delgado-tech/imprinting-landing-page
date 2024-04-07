@@ -1,14 +1,14 @@
 import { useState } from "react";
 import Accordion from "../Accordion";
 
-interface IAccordion {
+export interface IAccordionListItem {
 	title?: React.ReactNode;
 	content?: React.ReactNode;
 	className?: string;
 }
 
 interface Props {
-	accordionList: IAccordion[];
+	accordionList: IAccordionListItem[];
 	persistOpenedAccordion?: boolean;
 	defaultOpenedAccordion?: number;
 }

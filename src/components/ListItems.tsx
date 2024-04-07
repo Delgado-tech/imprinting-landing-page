@@ -14,11 +14,11 @@ export default function ListItems({ items, icon, className }: Props) {
 				<li
 					key={index}
 					className={twMerge(
-						"flex items-start gap-2 text-left text-xl text-custom-blue-02 max-sm:text-lg",
+						"flex items-start gap-2 text-left text-xl text-custom-blue-02 max-sm:gap-4 max-sm:text-base",
 						className,
 					)}
 				>
-					<span className="translate-y-[4px] max-sm:max-w-6 max-xs:max-w-4">
+					<span className="icon translate-y-[4px] max-sm:max-w-6 max-xs:max-w-4">
 						{icon}
 					</span>
 					<span>{item}</span>

@@ -1,6 +1,7 @@
 import { LucideCheckCircle2 } from "lucide-react";
 import ilustration from "../../../assets/woman_meditating.png";
 import ListItems from "../../ListItems";
+import Decoration from "../../decorations";
 
 export default function ProgramDestination() {
 	const listItems = [
@@ -15,7 +16,8 @@ export default function ProgramDestination() {
 		<section className="flex items-center justify-between gap-16 p-32 px-8 max-lg:flex-col lg:px-32 xl:items-start">
 			<div className="flex flex-col gap-16">
 				<article>
-					<h3 className="mb-8 font-poppins text-2xl font-semibold text-custom-blue-02 max-sm:text-xl">
+					<h3 className="relative mb-8 font-poppins text-2xl font-semibold text-custom-blue-02 max-sm:text-xl">
+						<Decoration.LeftLineDot />
 						Promovendo o bem-estar
 					</h3>
 					<p className="max-w-[1000px] text-xl max-sm:text-lg">
@@ -25,7 +27,8 @@ export default function ProgramDestination() {
 					</p>
 				</article>
 				<article>
-					<h3 className="mb-8 font-poppins text-2xl font-semibold text-custom-blue-02 max-sm:text-xl">
+					<h3 className=" relative mb-8 font-poppins text-2xl font-semibold text-custom-blue-02 max-sm:text-xl">
+						<Decoration.LeftLineDot />
 						Para quem o programa é destinado
 					</h3>
 					<p className="mb-6 max-w-[1000px] text-xl max-sm:text-lg">

@@ -5,7 +5,8 @@ import Decoration from "../../decorations";
 export default function Approach() {
 	return (
 		<div className="w-full">
-			<h2 className="mb-16 font-poppins text-3xl font-semibold">
+			<h2 className="relative mb-16 font-poppins text-3xl font-semibold">
+				<Decoration.LeftLineDot className="bg-custom-blue-light" />
 				Nossa abordagem
 			</h2>
 			<div className="relative grid grid-cols-12 gap-4 text-custom-gray-08 [&>:nth-child(n)]:z-10 [&>:nth-child(n)]:max-sm:col-span-full">
@@ -26,19 +27,19 @@ export default function Approach() {
 					title="Educação"
 					content="Fornecemos informações precisas sobre o funcionamento do tratamento, bem como os benefícios e riscos envolvidos"
 					icon={<School />}
-					className="bg-custom-pastel-green col-span-5 max-md:col-span-6"
+					className="col-span-5 bg-custom-pastel-green max-md:col-span-6"
 				/>
 				<SimpleCard
 					title="Acolhimento"
 					content="Criamos um ambiente seguro e acolhedor com nossos profissionais"
 					icon={<ShieldCheck />}
-					className="bg-custom-pastel-pink col-span-3 max-xl:col-span-4 max-md:col-span-6"
+					className="col-span-3 bg-custom-pastel-pink max-xl:col-span-4 max-md:col-span-6"
 				/>
 				<SimpleCard
 					title="Monitoramento"
 					content="Fazemos um monitoramento totalmente individual para garantir o melhor resultado possível ao participante"
 					icon={<Telescope />}
-					className="bg-custom-pastel-orange col-span-9 max-xl:col-span-8 max-md:col-span-6"
+					className="col-span-9 bg-custom-pastel-orange max-xl:col-span-8 max-md:col-span-6"
 				/>
 			</div>
 		</div>
