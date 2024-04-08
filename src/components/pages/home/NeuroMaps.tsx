@@ -22,6 +22,7 @@ export default function NeuroMaps() {
 					<h2 className="flex flex-col items-center font-poppins text-6xl font-semibold text-custom-gray-07 max-xl:text-5xl max-sm:text-3xl sm:flex-row sm:items-end sm:gap-2 xl:gap-4">
 						<span>Neuro Maps</span>
 						<TextLink
+							link="/neuro-maps"
 							content="ver mais"
 							className="text-2xl max-xl:text-xl max-sm:text-lg"
 						/>

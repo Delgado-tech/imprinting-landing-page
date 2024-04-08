@@ -33,7 +33,7 @@ export default function ProgramIAM() {
 						Transforme-se agora e junte-se à transformação!
 					</p>
 					<span className="block text-center">
-						<ButtonCta content="conhecer" />
+						<ButtonCta link="/eu-sou" content="conhecer" />
 					</span>
 				</article>
 			</div>

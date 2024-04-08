@@ -1,6 +1,5 @@
 import brain from "../../../assets/brain.png";
 import introduction_wave from "../../../assets/waves/introduction_wave.png";
-import ButtonCta from "../../button/ButtonCta";
 import Decoration from "../../decorations";
 
 export default function Introduction() {
@@ -18,10 +17,11 @@ export default function Introduction() {
 						neuroaprendizagem por meio de colaboração descentralizada e governança
 						autônoma.
 					</p>
-					<ButtonCta
-						className="mt-14 border border-white bg-transparent hover:border-transparent"
-						content="saiba mais"
-					/>
+					<a href="/#purpose-section">
+						<button className="mt-14 select-none rounded-full border border-white bg-custom-blue-02 bg-transparent px-8 py-2 font-poppins text-base text-white transition-all hover:scale-105 hover:border-transparent hover:bg-custom-blue-01 hover:shadow-md max-xs:text-sm md:px-12 md:text-xl">
+							saiba mais
+						</button>
+					</a>
 				</article>
 				<figure className="flex justify-center xl:justify-end">
 					<img

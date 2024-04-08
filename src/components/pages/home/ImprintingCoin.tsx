@@ -24,6 +24,7 @@ export default function ImprintingCoin() {
 							culturais, sociais, científicos e voluntários ao seu alcance
 						</p>
 						<ButtonCta
+							link="/imprinting-coin"
 							className="mt-12 max-w-[1200px] bg-custom-beige-03 text-black hover:text-white"
 							content="veja mais"
 						/>

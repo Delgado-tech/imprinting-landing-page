@@ -13,7 +13,7 @@ export default function CallToProgram() {
 				programa Eu Sou, para ter acesso o quanto antes a plataforma conheça o nosso
 				programa!
 			</p>
-			<ButtonCta content="CONHECER AGORA" />
+			<ButtonCta content="CONHECER AGORA" link="/eu-sou" />
 		</div>
 	);
 }

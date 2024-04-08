@@ -32,6 +32,13 @@ export default function NavBar() {
 					<li key={index} className="group/item relative">
 						<Link
 							to={item.link}
+							onClick={() => {
+								window.scroll({
+									top: 0,
+									left: 0,
+									behavior: "instant",
+								});
+							}}
 							className="font-poppins text-lg uppercase text-custom-gray-06 transition-all hover:text-custom-gray-02 xl:text-xl"
 						>
 							{item.content}

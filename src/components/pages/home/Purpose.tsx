@@ -11,7 +11,7 @@ export default function Purpose() {
 		{
 			icon: <SearchIcon className="size-16 max-md:size-12" />,
 			title: "Pesquisa Neurocientifica",
-			content: "Inovação em Neuropsicofarmacologia e Neuroaprendizagem",
+			content: "Inovação em Neuro-psicofarmacologia e Neuro-aprendizagem",
 		},
 		{
 			icon: <BookMarkedIcon className="size-16 max-md:size-12" />,
@@ -32,7 +32,10 @@ export default function Purpose() {
 	];
 
 	return (
-		<section className="mb-10 flex flex-col items-center gap-8 p-5 px-8 lg:px-32 xl:items-start">
+		<section
+			id="purpose-section"
+			className="mb-10 flex flex-col items-center gap-8 p-5 px-8 lg:px-32 xl:items-start"
+		>
 			<h2 className="text-center font-roboto text-3xl font-semibold text-custom-gray-06 md:text-5xl xl:text-start">
 				Nosso Propósito
 			</h2>

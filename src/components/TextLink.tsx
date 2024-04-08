@@ -12,7 +12,16 @@ export default function TextLink({
 	className,
 }: Props) {
 	return (
-		<Link to={link} className="transition-all hover:scale-[105%]">
+		<Link
+			to={link}
+			onClick={() => {
+				window.scroll({
+					top: 0,
+					left: 0,
+				});
+			}}
+			className="transition-all hover:scale-[105%]"
+		>
 			<span
 				className={twMerge(
 					"cursor-pointer select-none font-normal text-custom-blue-02 underline underline-offset-4 transition-all hover:text-custom-blue-01",
