@@ -1,3 +1,4 @@
+import Reveal from "../../animations/Reveal";
 import Decoration from "../../decorations";
 import AccordionGroup from "../AccordionGroup";
 
@@ -6,7 +7,7 @@ export default function Benefits() {
 		<div className="flex w-full flex-col gap-8">
 			<h2 className="relative mb-8 font-poppins text-3xl font-semibold">
 				<Decoration.LeftLineDot className="bg-custom-blue-light" />
-				Benefícios ao Paciente
+				<Reveal>Benefícios ao Paciente</Reveal>
 			</h2>
 			<AccordionGroup
 				accordionList={[

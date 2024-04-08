@@ -17,11 +17,13 @@ export default function ButtonCta({
 		<Link
 			to={link}
 			onClick={() => {
-				window.scroll({
-					top: 0,
-					left: 0,
-					behavior: scrollSmooth ? "smooth" : "instant",
-				});
+				setTimeout(() => {
+					window.scroll({
+						top: 0,
+						left: 0,
+						behavior: scrollSmooth ? "smooth" : "instant",
+					});
+				}, 600);
 			}}
 		>
 			<button

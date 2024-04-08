@@ -1,5 +1,6 @@
 import brain from "../../../assets/brain.png";
 import introduction_wave from "../../../assets/waves/introduction_wave.png";
+import Reveal from "../../animations/Reveal";
 import Decoration from "../../decorations";
 
 export default function Introduction() {
@@ -8,20 +9,26 @@ export default function Introduction() {
 			<Decoration.ArrowDots className="absolute right-5 -rotate-90 max-md:top-52 max-sm:top-40 max-sm:size-6" />
 			<div className="relative flex flex-col gap-16 pb-32 pt-28 md:pb-16 xl:flex-row xl:pt-16">
 				<article className="flex flex-col items-center gap-8 px-8 lg:px-32 xl:items-start">
-					<h1 className="max-w-[400px] text-center font-roboto text-3xl font-semibold text-white max-xs:text-2xl md:max-w-[700px] md:text-5xl xl:text-start">
-						Revolucionando a Pesquisa Científica e Desenvolvimento Humano
-					</h1>
-					<p className="max-w-[700px] text-balance text-center text-lg text-zinc-50 md:text-2xl xl:text-start">
-						Somos uma DAO (Decentralized Autonomous Organization) dedicada à inovação
-						em neurobiologia, promovendo avanços em neuropsicofarmacologia e
-						neuroaprendizagem por meio de colaboração descentralizada e governança
-						autônoma.
-					</p>
-					<a href="/#purpose-section">
-						<button className="mt-14 select-none rounded-full border border-white bg-custom-blue-02 bg-transparent px-8 py-2 font-poppins text-base text-white transition-all hover:scale-105 hover:border-transparent hover:bg-custom-blue-01 hover:shadow-md max-xs:text-sm md:px-12 md:text-xl">
-							saiba mais
-						</button>
-					</a>
+					<Reveal delay={0.8}>
+						<h1 className="max-w-[400px] text-center font-roboto text-3xl font-semibold text-white max-xs:text-2xl md:max-w-[700px] md:text-5xl xl:text-start">
+							Revolucionando a Pesquisa Científica e Desenvolvimento Humano
+						</h1>
+					</Reveal>
+					<Reveal delay={1}>
+						<p className="max-w-[700px] text-balance text-center text-lg text-zinc-50 md:text-2xl xl:text-start">
+							Somos uma DAO (Decentralized Autonomous Organization) dedicada à inovação
+							em neurobiologia, promovendo avanços em neuropsicofarmacologia e
+							neuroaprendizagem por meio de colaboração descentralizada e governança
+							autônoma.
+						</p>
+					</Reveal>
+					<Reveal delay={1}>
+						<a href="/#purpose-section">
+							<button className="mt-14 select-none rounded-full border border-white bg-custom-blue-02 bg-transparent px-8 py-2 font-poppins text-base text-white transition-all hover:scale-105 hover:border-transparent hover:bg-custom-blue-01 hover:shadow-md max-xs:text-sm md:px-12 md:text-xl">
+								saiba mais
+							</button>
+						</a>
+					</Reveal>
 				</article>
 				<figure className="flex justify-center xl:justify-end">
 					<img

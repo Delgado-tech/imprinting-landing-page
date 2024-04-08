@@ -1,11 +1,12 @@
 import notfound from "../../assets/404-error.png";
+import BrandingCoverTransition from "../../components/animations/transitions/BrandingCoverTransition";
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 
 export default function NotFoundPage() {
 	return (
 		<section>
-			<Header />
+			<BrandingCoverTransition />
+
 			<div className="relative flex h-full min-h-screen flex-col items-center justify-between gap-4 bg-gradient-to-r from-white to-custom-gray-04 pt-40">
 				<div className="flex flex-wrap items-center justify-center py-8">
 					<figure className="size-96 transition-all max-md:size-72 max-sm:size-52">

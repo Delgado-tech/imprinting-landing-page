@@ -1,6 +1,6 @@
+import BrandingCoverTransition from "../../components/animations/transitions/BrandingCoverTransition";
 import Decoration from "../../components/decorations";
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 import IntroductionBanner from "../../components/IntroductionBanner";
 import MoreInfo from "../../components/pages/neuro_maps/MoreInfo";
 import Solutions from "../../components/pages/neuro_maps/Solutions";
@@ -9,10 +9,11 @@ import Targets from "../../components/pages/neuro_maps/Targets";
 export default function NeuroMapsPage() {
 	return (
 		<section>
+			<BrandingCoverTransition />
+
 			<div className="relative">
 				<Decoration.LeftLine />
 
-				<Header />
 				<main>
 					<IntroductionBanner
 						title="Neuro Maps"

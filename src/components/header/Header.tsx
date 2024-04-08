@@ -43,7 +43,7 @@ export default function Header() {
 					</figure>
 				</div>
 
-				<NavBar />
+				<NavBar closeNavBarHandler={() => setShowNavItems(false)} />
 			</header>
 		</section>
 	);

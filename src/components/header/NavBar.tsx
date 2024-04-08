@@ -5,7 +5,11 @@ interface INavItems {
 	link: string;
 }
 
-export default function NavBar() {
+interface Props {
+	closeNavBarHandler?: () => void;
+}
+
+export default function NavBar({ closeNavBarHandler = () => {} }: Props) {
 	const navItems: INavItems[] = [
 		{
 			content: "Home",
@@ -33,11 +37,14 @@ export default function NavBar() {
 						<Link
 							to={item.link}
 							onClick={() => {
-								window.scroll({
-									top: 0,
-									left: 0,
-									behavior: "instant",
-								});
+								setTimeout(() => {
+									window.scroll({
+										top: 0,
+										left: 0,
+										behavior: "instant",
+									});
+								}, 600);
+								closeNavBarHandler();
 							}}
 							className="font-poppins text-lg uppercase text-custom-gray-06 transition-all hover:text-custom-gray-02 xl:text-xl"
 						>

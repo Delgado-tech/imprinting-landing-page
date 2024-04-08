@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Accordion from "../Accordion";
+import Reveal from "../animations/Reveal";
 
 export interface IAccordionListItem {
 	title?: React.ReactNode;
@@ -23,18 +24,19 @@ export default function AccordionGroup({
 	return (
 		<>
 			{accordionList.map((acc, index) => (
-				<Accordion
-					key={index}
-					id={index}
-					defaultOpen={openId === index}
-					noClose={persistOpenedAccordion}
-					onToggle={(isOpen) => {
-						if (isOpen) setOpenId(index);
-					}}
-					title={acc.title}
-					content={acc.content}
-					className={acc.className}
-				/>
+				<Reveal key={index} delay={0.2 * index}>
+					<Accordion
+						id={index}
+						defaultOpen={openId === index}
+						noClose={persistOpenedAccordion}
+						onToggle={(isOpen) => {
+							if (isOpen) setOpenId(index);
+						}}
+						title={acc.title}
+						content={acc.content}
+						className={acc.className}
+					/>
+				</Reveal>
 			))}
 		</>
 	);

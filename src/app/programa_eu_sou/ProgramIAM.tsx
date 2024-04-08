@@ -1,7 +1,7 @@
 import sprout from "../../assets/sprout.png";
+import BrandingCoverTransition from "../../components/animations/transitions/BrandingCoverTransition";
 import Decoration from "../../components/decorations";
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 import IntroductionBanner from "../../components/IntroductionBanner";
 import ProgramApresentation from "../../components/pages/programa_eu_sou/ProgramApresentation";
 import ProgramDestination from "../../components/pages/programa_eu_sou/ProgramDestination";
@@ -10,10 +10,10 @@ import ProgramInterest from "../../components/pages/programa_eu_sou/ProgramInter
 export default function ProgramIAMPage() {
 	return (
 		<section>
+			<BrandingCoverTransition />
 			<div className="relative">
 				<Decoration.LeftLine />
 
-				<Header />
 				<main>
 					<IntroductionBanner
 						title={"Eu Sou"}

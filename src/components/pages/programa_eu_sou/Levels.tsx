@@ -1,4 +1,5 @@
 import { Dot } from "lucide-react";
+import Reveal from "../../animations/Reveal";
 import Decoration from "../../decorations";
 import ListItems from "../../ListItems";
 import AccordionGroup, { IAccordionListItem } from "../AccordionGroup";
@@ -114,10 +115,10 @@ export default function Levels() {
 		<div className="w-full">
 			<h2 className="relative mb-16 font-poppins text-3xl font-semibold">
 				<Decoration.LeftLineDot className="bg-custom-blue-light" />
-				Fases do Programa
+				<Reveal>Fases do Programa</Reveal>
 			</h2>
 			<div className="grid grid-cols-2 items-center gap-8 max-xl:grid-cols-1">
-				<div>
+				<Reveal delay={0.6}>
 					<div className="rounded-lg bg-slate-500 p-8 text-xl max-sm:p-6 max-sm:text-base max-xs:text-center">
 						<div className="mb-8 flex items-center justify-between gap-8 max-sm:flex-col max-sm:items-start">
 							<div>
@@ -137,9 +138,9 @@ export default function Levels() {
 							<AccordionGroup persistOpenedAccordion accordionList={level1Content} />
 						</div>
 					</div>
-				</div>
+				</Reveal>
 
-				<div>
+				<Reveal delay={1.2}>
 					<div className="rounded-lg bg-custom-gray-10 p-8 text-xl text-custom-pastel-blue-02 max-sm:p-6 max-sm:text-base max-xs:text-center">
 						<div className="mb-8 flex items-center justify-between gap-8 max-sm:flex-col max-sm:items-start">
 							<div>
@@ -159,7 +160,7 @@ export default function Levels() {
 							<AccordionGroup persistOpenedAccordion accordionList={level2Content} />
 						</div>
 					</div>
-				</div>
+				</Reveal>
 			</div>
 		</div>
 	);

@@ -1,4 +1,5 @@
 import sprout from "../../../assets/sprout.png";
+import Reveal from "../../animations/Reveal";
 import ButtonCta from "../../button/ButtonCta";
 import Decoration from "../../decorations";
 
@@ -15,26 +16,32 @@ export default function ProgramIAM() {
 			<div>
 				{/* Título */}
 				<div className="flex justify-center">
-					<div className="relative mb-12 flex w-fit flex-col items-center">
-						<h2 className="font-poppins text-2xl font-medium text-custom-gray-03 max-xl:text-xl max-sm:text-lg">
-							programa
-						</h2>
-						<h2 className="flex flex-col items-center font-poppins text-6xl font-semibold text-custom-blue-02 max-xl:text-5xl max-sm:text-3xl sm:flex-row sm:items-end sm:gap-2 xl:gap-4">
-							<span>Eu Sou</span>
-						</h2>
-					</div>
+					<Reveal>
+						<div className="relative mb-12 flex w-fit flex-col items-center">
+							<h2 className="font-poppins text-2xl font-medium text-custom-gray-03 max-xl:text-xl max-sm:text-lg">
+								programa
+							</h2>
+							<h2 className="flex flex-col items-center font-poppins text-6xl font-semibold text-custom-blue-02 max-xl:text-5xl max-sm:text-3xl sm:flex-row sm:items-end sm:gap-2 xl:gap-4">
+								<span>Eu Sou</span>
+							</h2>
+						</div>
+					</Reveal>
 				</div>
 				{/* Texto */}
 				<article>
-					<p className="mb-20 text-3xl text-custom-gray-09 max-xl:text-2xl max-sm:text-center max-sm:text-lg">
-						Desperte seu potencial com um programa inovador, inspirado nos ODS
-						(Objetivos de Desenvolvimento Sustentável) da ONU. Descubra ferramentas
-						para crescimento pessoal e contribua para um futuro sustentável.
-						Transforme-se agora e junte-se à transformação!
-					</p>
-					<span className="block text-center">
-						<ButtonCta link="/eu-sou" content="conhecer" />
-					</span>
+					<Reveal delay={0.1}>
+						<p className="mb-20 text-3xl text-custom-gray-09 max-xl:text-2xl max-sm:text-center max-sm:text-lg">
+							Desperte seu potencial com um programa inovador, inspirado nos ODS
+							(Objetivos de Desenvolvimento Sustentável) da ONU. Descubra ferramentas
+							para crescimento pessoal e contribua para um futuro sustentável.
+							Transforme-se agora e junte-se à transformação!
+						</p>
+					</Reveal>
+					<Reveal delay={0.2}>
+						<span className="block text-center">
+							<ButtonCta link="/eu-sou" content="conhecer" />
+						</span>
+					</Reveal>
 				</article>
 			</div>
 			<Decoration.ArrowDots className="absolute -bottom-24 right-4 scale-75 lg:right-10 lg:scale-100" />

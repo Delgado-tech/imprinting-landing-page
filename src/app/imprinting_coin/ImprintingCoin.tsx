@@ -1,6 +1,6 @@
+import BrandingCoverTransition from "../../components/animations/transitions/BrandingCoverTransition";
 import Decoration from "../../components/decorations";
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 import IntroductionBanner from "../../components/IntroductionBanner";
 import MoreInfo from "../../components/pages/imprinting_coin/MoreInfo";
 import MoreThanACoin from "../../components/pages/imprinting_coin/MoreThanACoin";
@@ -9,10 +9,11 @@ import Targets from "../../components/pages/imprinting_coin/Targets";
 export default function ImprintingCoinPage() {
 	return (
 		<section>
+			<BrandingCoverTransition />
+
 			<div className="relative overflow-hidden">
 				<Decoration.LeftLine />
 
-				<Header />
 				<main>
 					<IntroductionBanner
 						title="Imprinting Coin"
