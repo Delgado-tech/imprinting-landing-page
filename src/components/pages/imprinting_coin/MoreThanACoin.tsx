@@ -24,7 +24,7 @@ export default function MoreThanACoin() {
 				<figure className="max-lg:self-center">
 					<img
 						src={ilustration}
-						className="no-select w-[600px] lg:absolute lg:-right-32 lg:bottom-0 lg:-rotate-[25deg]"
+						className="no-select -z-10 w-[600px] lg:absolute lg:-right-32 lg:bottom-0 lg:-rotate-[25deg]"
 					/>
 				</figure>
 			</div>
