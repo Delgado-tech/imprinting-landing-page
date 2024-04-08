@@ -4,14 +4,6 @@ import ListItems from "../../ListItems";
 import Decoration from "../../decorations";
 
 export default function ProgramDestination() {
-	const listItems = [
-		"transtornos de saúde mental",
-		"doenças neurodegenerativas",
-		"dores crônicas",
-		"problemas de ordem física",
-		"problemas de ordem emocial",
-	];
-
 	return (
 		<section className="flex items-center justify-between gap-16 p-32 px-8 max-lg:flex-col lg:px-32 xl:items-start">
 			<div className="flex flex-col gap-16">
@@ -36,7 +28,30 @@ export default function ProgramDestination() {
 						condições de saúde, tais como:
 					</p>
 
-					<ListItems items={listItems} icon={<LucideCheckCircle2 />} />
+					<ListItems
+						items={[
+							"transtornos de saúde mental",
+							"doenças neurodegenerativas",
+							"dores crônicas",
+							"problemas de ordem física",
+							"problemas de ordem emocial",
+						]}
+						icon={<LucideCheckCircle2 />}
+					/>
+				</article>
+				<article>
+					<h3 className="relative mb-8 font-poppins text-2xl font-semibold text-custom-blue-02 max-sm:text-xl">
+						<Decoration.LeftLineDot />
+						Metas com o programa
+					</h3>
+					<ListItems
+						items={[
+							"Pesquisa, acolhimento e desenvolvimento de terapias integrativas com base científica tendo protocolos seguros e eficazes",
+							"Integrar 1 milhão de associados em 36 meses, transformando vidas",
+							"Promover o acolhimento humanizado de 10 milhões de pacientes voluntários em 36 meses",
+						]}
+						icon={<LucideCheckCircle2 />}
+					/>
 				</article>
 			</div>
 			<figure>

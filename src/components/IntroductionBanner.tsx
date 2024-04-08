@@ -38,15 +38,12 @@ export default function IntroductionBanner({
 								/>
 							</figure>
 						)}
-						<div>
-							<h2
-								data-has-img={imgSrc !== undefined}
-								className="prop-subtitle font-poppins text-2xl font-medium text-custom-gray-03 group-data-[light=true]:text-custom-gray-01 max-xl:text-xl max-xl:data-[has-img=false]:text-center max-sm:text-lg"
-							>
+						<div className="group" data-has-img={imgSrc !== undefined}>
+							<h2 className="prop-subtitle font-poppins text-2xl font-medium text-custom-gray-03 group-data-[light=true]:text-custom-gray-01 max-xl:text-xl max-xl:group-data-[has-img=false]:text-center max-sm:text-lg">
 								{subTitle}
 							</h2>
-							<h2 className="prop-title flex flex-col items-center font-poppins text-6xl font-semibold text-custom-gray-06 group-data-[light=true]:text-white max-xl:text-5xl max-sm:text-3xl sm:flex-row sm:items-end sm:gap-2 xl:gap-4">
-								<span>{title}</span>
+							<h2 className="prop-title font-poppins text-6xl font-semibold text-custom-gray-06 group-data-[light=true]:text-white max-xl:text-5xl max-xl:group-data-[has-img=false]:text-center max-sm:text-3xl sm:gap-2 xl:gap-4">
+								{title}
 							</h2>
 						</div>
 					</div>

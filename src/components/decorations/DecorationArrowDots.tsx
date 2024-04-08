@@ -13,7 +13,7 @@ export default function DecorationArrowDots({
 			height="42"
 			viewBox="0 0 42 42"
 			fill="none"
-			className={twMerge("opacity-20", className)}
+			className={twMerge("opacity-20 transition-all", className)}
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<circle

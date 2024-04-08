@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomePage from "./app/home/Home.tsx";
+import ImprintingCoinPage from "./app/imprinting_coin/ImprintingCoin.tsx";
 import NeuroMapsPage from "./app/neuro_maps/NeuroMaps.tsx";
 import NotFoundPage from "./app/not_found/NotFound.tsx";
 import ProgramIAMPage from "./app/programa_eu_sou/ProgramIAM.tsx";
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
 	{
 		path: "/eu-sou",
 		element: <ProgramIAMPage />,
+	},
+	{
+		path: "/imprinting-coin",
+		element: <ImprintingCoinPage />,
 	},
 	{
 		path: "/neuro-maps",
