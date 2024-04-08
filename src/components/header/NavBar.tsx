@@ -12,16 +12,16 @@ export default function NavBar() {
 			link: "/",
 		},
 		{
-			content: "Neuro Maps",
-			link: "",
-		},
-		{
 			content: "Programa Eu Sou",
 			link: "/eu-sou",
 		},
 		{
-			content: "Contato",
-			link: "",
+			content: "Imprinting Coin",
+			link: "/imprinting-coin",
+		},
+		{
+			content: "Neuro Maps",
+			link: "/neuro-maps",
 		},
 	];
 

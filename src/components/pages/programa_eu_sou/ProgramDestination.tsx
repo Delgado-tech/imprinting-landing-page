@@ -27,7 +27,7 @@ export default function ProgramDestination() {
 					</p>
 				</article>
 				<article>
-					<h3 className=" relative mb-8 font-poppins text-2xl font-semibold text-custom-blue-02 max-sm:text-xl">
+					<h3 className="relative mb-8 font-poppins text-2xl font-semibold text-custom-blue-02 max-sm:text-xl">
 						<Decoration.LeftLineDot />
 						Para quem o programa é destinado
 					</h3>

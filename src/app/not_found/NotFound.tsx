@@ -2,7 +2,7 @@ import notfound from "../../assets/404-error.png";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
-export default function NotFound() {
+export default function NotFoundPage() {
 	return (
 		<section>
 			<Header />

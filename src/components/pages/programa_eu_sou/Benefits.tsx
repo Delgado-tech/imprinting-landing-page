@@ -4,7 +4,7 @@ import coin from "../../../assets/coin.png";
 import ilustrationWoman from "../../../assets/medicine-cuate.png";
 import Decoration from "../../decorations";
 import ListItems from "../../ListItems";
-import CardImg from "./CardImg";
+import SectionImg from "../../SectionImg";
 
 export default function Benefits() {
 	return (
@@ -14,7 +14,9 @@ export default function Benefits() {
 				Benefícios
 			</h2>
 			<div className="flex flex-col gap-16">
-				<CardImg
+				<SectionImg
+					container
+					leakingFigure
 					imgSrc={coin}
 					content={
 						<>
@@ -34,7 +36,9 @@ export default function Benefits() {
 						</>
 					}
 				/>
-				<CardImg
+				<SectionImg
+					container
+					leakingFigure
 					reverse
 					imgSrc={ilustrationWoman}
 					content={
