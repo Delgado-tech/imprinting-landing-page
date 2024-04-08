@@ -29,6 +29,13 @@ export default function Benefits() {
 							<br />
 							<Link
 								to={"/imprinting-coin"}
+								onClick={() => {
+									window.scroll({
+										top: 0,
+										left: 0,
+										behavior: "instant",
+									});
+								}}
 								className="text-custom-beige-02 transition-all hover:text-custom-beige-01 hover:underline hover:underline-offset-2"
 							>
 								saiba mais
@@ -51,6 +58,13 @@ export default function Benefits() {
 							<br />
 							<Link
 								to={"/neuro-maps"}
+								onClick={() => {
+									window.scroll({
+										top: 0,
+										left: 0,
+										behavior: "instant",
+									});
+								}}
 								className="text-violet-400 transition-all hover:text-violet-200 hover:underline hover:underline-offset-2"
 							>
 								saiba mais
