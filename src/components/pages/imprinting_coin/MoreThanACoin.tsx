@@ -3,7 +3,7 @@ import Decoration from "../../decorations";
 
 export default function MoreThanACoin() {
 	return (
-		<section className="relative flex flex-col gap-32 px-8 pt-16 lg:px-32">
+		<section className="relative flex flex-col gap-32 px-8 py-16 lg:px-32">
 			<div className="flex flex-col gap-8 ">
 				<h2 className="relative font-poppins text-3xl font-semibold text-custom-blue-02 max-sm:text-xl lg:max-w-[70%]">
 					<Decoration.LeftLineDot />
