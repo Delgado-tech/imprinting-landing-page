@@ -6,6 +6,7 @@ export default function App() {
 	return (
 		<section>
 			<BrowserRouter>
+				<span id={"top"} />
 				<Header />
 				<AnimatedRoutes />
 			</BrowserRouter>
