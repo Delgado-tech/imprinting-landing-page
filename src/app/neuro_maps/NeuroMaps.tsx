@@ -16,7 +16,7 @@ export default function NeuroMapsPage() {
 
 				<main>
 					<IntroductionBanner
-						title="Neuro Maps"
+						title="NeuroMaps"
 						subTitle="Hospital Digital"
 						content="Uma plataforma que permite consultas remotas e monitoramento em tempo real, promovendo o bem-estar em união com os ODS da ONU."
 						className="from-custom-blue-02 to-custom-magenta-02"

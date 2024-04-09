@@ -24,7 +24,7 @@ export default function NavBar({ closeNavBarHandler = () => {} }: Props) {
 			link: "/imprinting-coin",
 		},
 		{
-			content: "Neuro Maps",
+			content: "NeuroMaps",
 			link: "/neuro-maps",
 		},
 	];

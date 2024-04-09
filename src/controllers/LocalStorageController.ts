@@ -1,9 +1,16 @@
+import { parseIntDefault } from "../utils/parseInt";
+
 class LocalStorageControllers {
+	private static turnLimit = Math.max(
+		parseIntDefault(import.meta.env.VITE_EMAIL_ATTEMPTS, 1),
+		1,
+	);
+
 	private static setData(count?: number) {
 		const local = localStorage;
 		if (count) {
 			const { turn } = this.getData();
-			localStorage.setItem("turn", JSON.stringify(turn + count));
+			local.setItem("turn", JSON.stringify(turn + count));
 		} else {
 			const now = new Date().getTime();
 			local.setItem("turn", JSON.stringify(1));
@@ -37,7 +44,7 @@ class LocalStorageControllers {
 
 		if (time > 0 && turn > 0) {
 			if (this.time() < 60) {
-				if (turn < 3) {
+				if (turn < this.turnLimit) {
 					this.setData(1);
 					return true;
 				} else {

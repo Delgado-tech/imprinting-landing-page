@@ -57,7 +57,7 @@ export default function Benefits() {
 						content={
 							<>
 								Os participantes terão acesso ao hospital digital{" "}
-								<span className="text-violet-400">Neuro Maps</span> que oferece
+								<span className="text-violet-400">NeuroMaps</span> que oferece
 								acolhimento humanizado em saúde e bem-estar por meio de soluções de
 								tecnologias inovadoras.
 								<br />
@@ -84,9 +84,16 @@ export default function Benefits() {
 				<div className="mt-4">
 					<Reveal delay={0.6}>
 						<p className="mb-8 text-xl max-md:text-base">
-							Além disso ao se tornarem membros da Associação, os participantes do
-							programa assumem um papel ativo na construção de um futuro mais saudável
-							e próspero para todos, contribuindo para:
+							Além disso Os participantes terão acesso a plataforma de ensino a
+							distância da universidade social{" "}
+							<span className="text-emerald-400">Imprinting Corp</span> que oferece
+							cursos em metodologia de neuro-aprendizagem, bem como a programas de
+							imersão voluntária.
+							<br />
+							<br />
+							Ao se tornarem membros da Associação, os participantes do programa
+							assumem um papel ativo na construção de um futuro mais saudável e
+							próspero para todos, contribuindo para:
 						</p>
 					</Reveal>
 					<Reveal delay={0.8}>

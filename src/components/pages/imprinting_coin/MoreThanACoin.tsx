@@ -1,5 +1,6 @@
 import ilustration from "../../../assets/holding-phone.png";
 import Reveal from "../../animations/Reveal";
+import ButtonType from "../../button/ButtonType";
 import Decoration from "../../decorations";
 
 export default function MoreThanACoin() {
@@ -22,7 +23,19 @@ export default function MoreThanACoin() {
 						<br />
 						Empoderamento e transformação digital e social: Abrindo caminho para um
 						futuro promissor.
+						<br />
+						<br />
+						Participe da revolução! Clique no botão abaixo e faça seu cadastro para a
+						pré-venda:
 					</p>
+				</Reveal>
+				<Reveal delay={0.6}>
+					<a
+						href={import.meta.env.VITE_IMPRINTING_COIN_PRE_VENDA_LINK}
+						target="_blank"
+					>
+						<ButtonType type="button">Pré-venda</ButtonType>
+					</a>
 				</Reveal>
 				<figure className="max-lg:self-center">
 					<img

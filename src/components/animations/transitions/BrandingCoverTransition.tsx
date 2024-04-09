@@ -5,7 +5,7 @@ export default function BrandingCoverTransition() {
 	return (
 		<>
 			<motion.div
-				className="t-0 fixed z-[990] flex h-screen w-full origin-left items-center justify-center bg-slate-100"
+				className="t-0 fixed z-[990] flex h-screen w-full origin-left items-center justify-center bg-slate-200"
 				initial={{ left: "-100%" }}
 				animate={{ left: "-100%" }}
 				exit={{ left: 0 }}
@@ -17,7 +17,7 @@ export default function BrandingCoverTransition() {
 				/>
 			</motion.div>
 			<motion.div
-				className="t-0 fixed z-[990] flex h-screen w-full origin-right items-center justify-center bg-slate-100"
+				className="t-0 fixed z-[990] flex h-screen w-full origin-right items-center justify-center bg-slate-200"
 				initial={{ left: 0 }}
 				animate={{ left: "100%" }}
 				exit={{ left: "100%" }}

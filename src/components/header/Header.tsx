@@ -25,7 +25,7 @@ export default function Header() {
 			<header className="flex flex-wrap items-center justify-between gap-6 px-4 py-12 max-sm:flex-col sm:px-6 lg:px-32">
 				<div className="flex select-none flex-wrap items-center justify-between gap-x-8 gap-y-2 max-sm:w-full max-xs:justify-center">
 					<a
-						href={"#top"}
+						href={"/#top"}
 						className="flex cursor-pointer items-center gap-2"
 						onClick={() => setShowNavItems(false)}
 					>
