@@ -15,6 +15,7 @@ com navegação entre páginas, animações e formulário de interesse com preve
 | <img src="https://vitejs.dev/logo.svg" width="24px"/>                                                                                               | Vite          |
 | <img src="https://reactrouter.com/favicon-dark.png" width="24px"/>                                                                                  | React Router  |
 | <img src="https://github.com/Delgado-tech/imprinting-landing-page/assets/60985347/01b581b9-e47d-44cc-87b0-2b7a2189324d" width="24px"/>              | Framer Motion |
+| <img src="https://www.emailjs.com/favicon/favicon-32x32.png" width="24px"/>                                                                         | EmailJs       |
 | <img src="https://www.typescriptlang.org/icons/icon-96x96.png" width="24px"/>                                                                       | Typescript    |
 | <img src="https://tailwindcss.com/favicons/favicon-32x32.png" width="24px"/>                                                                        | TailwindCSS   |
 | <img src="https://lucide.dev/logo.dark.svg" width="24px"/>                                                                                          | LucideIcons   |
@@ -23,39 +24,19 @@ com navegação entre páginas, animações e formulário de interesse com preve
 
 ## Funcionalidades
 
-### 1. Robô Adversário
+### 1. Navegação entre páginas
    
-Foi programado uma inteligência artificial para jogar contra o usuário, ela rastreia todo o tabuleiro verificando a melhor jogada a se fazer. <br>
-A seguir veja uma lista com as ações em ordem prioritária que a IA executa.
+Foi implementado um sistema de navegação entre páginas com animações.
 
 
-| Prioridade     | Ação                                | Método                                                                                                          						|
-|:--------------:|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| 1              | Ganhar o jogo                       | Rastreia o tabuleiro inteiro verificando se é possível ganhar com o próximo movimento                           						|
-| 2              | Impedir que o adversário ganhe      | Rastreia o tabuleiro inteiro verificando se a próxima jogada do usúario pode resultar em uma vitória e o impede					  |
-| 3              | Impedir estratégia de diagonais     | Caso o usuário marque duas diagonais opostas a IA marca uma lateral ao centro impedindo a estratégia            						|
-| 4              | Impedir estratégia de L             | Caso por exemplo a lateral meio-esquerda e a lateral meio-baixo sejam preenchidas é preenchido a diagonal entre elas				|
-| 5              | Impedir estratégia de L2            | Caso por exemplo a diagonal esquerda-cima e a lateral meio-direita sejam preenchidas é preenchido a diagonal direita-baixo |
-| 6              | Marcar o centro                     | O centro se não foi preenchido é priorizado                                                                     						|
-| 7              | Marcar diagonais                    | As diagonais são priorizadas se o centro foi preenchido                                                         						|
-| 8              | Jogada aleatória                    | É marcado um espaço vazio aleatório                                                                             						|
-
-
-### 2. Modos de jogo
+### 2. Responsividade
    
-Foram programados 4 modos de jogo, sendo eles:
-
-| Modo_de_jogo | Descrição                                                                                                                         	 |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Fácil        | A IA se comporta mais desleixadamente, tendo apenas 25% de chance de realizar as ações [1, 3, 4, 5, 6, 7] e 0% de chance a ação [2] |
-| Médio        | A IA se comporta melhor, tendo 50% de chance de realizar as ações [1-7]                                                           	 |
-| Impossível   | A IA se comporta da melhor forma possível, ao jogar nesse modo o resultado sempre será um empate ou uma vitória por parte da IA   	 |
-| 2_Jogadores  | É desativado o sistema de IA, permitindo que o usuário jogue também no turno que seria da IA (podendo assim jogar com um amigo)   	 |
+Foi implementado responsividade no projeto inteiro fazendo ele se adequar em diversas telas diferentes
 
 
-### 3. Scoreboard
+### 3. Formulário
 
-Foi implementado um placar para acompanhar a pontuação geral.
+Foi implementado um formulário de envio de contato com controle de envio para evitar spam, utilizando a biblioteca emailJS foi possível criar um email personalizado
 
 
 ### 4. Interface amigável com animações
