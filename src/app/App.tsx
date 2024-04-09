@@ -1,12 +1,15 @@
-import Logo from "../components/Logo.tsx";
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "../components/animations/AnimatedRoutes";
+import Header from "../components/header/Header";
 
-function App() {
+export default function App() {
 	return (
 		<section>
-			<main>Olá mundo</main>
-			<Logo color="red" />
+			<BrowserRouter>
+				<span id={"top"} />
+				<Header />
+				<AnimatedRoutes />
+			</BrowserRouter>
 		</section>
 	);
 }
-
-export default App;
