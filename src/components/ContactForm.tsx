@@ -2,13 +2,13 @@ import emailjs from "@emailjs/browser";
 import dFormat from "dateformat";
 import { Loader2Icon, MailCheckIcon } from "lucide-react";
 import React, { useState } from "react";
+import "../controllers/LocalStorageController";
+import LocalStorageControllers from "../controllers/LocalStorageController";
 import { RegexTemplate } from "../utils/regex";
 import InputField from "./InputField";
 import SelectInput from "./SelectInput";
 import TextareaField from "./TextareaField";
 import ButtonType from "./button/ButtonType";
-import "../controllers/LocalStorageController"
-import LocalStorageControllers from "../controllers/LocalStorageController";
 
 export default function ContactForm() {
 	const [isSended, setIsSended] = useState<boolean>(false);
@@ -19,7 +19,6 @@ export default function ContactForm() {
 
 		if (LocalStorageControllers.checkTime()) {
 			if (isLoading) return;
-
 
 			setIsLoading(true);
 			const send_datetime = dFormat(new Date(), "dd/mm/yyyy HH:MM:ss");
@@ -48,7 +47,9 @@ export default function ContactForm() {
 					);
 				});
 		} else {
-			alert(`Ainda não é possível enviar um novo e-mail, tempo restante: ${LocalStorageControllers.time()} minutos`);
+			alert(
+				`Ainda não é possível enviar um novo e-mail, tempo restante: ${LocalStorageControllers.time()} minutos`,
+			);
 		}
 	};
 
@@ -64,7 +65,7 @@ export default function ContactForm() {
 			<SelectInput
 				id={"interested_type"}
 				label={"Interessado"}
-				labelColor={"bg-custom-gray-08"}
+				labelColor={"bg-custom-gray-09"}
 				disabled={isSended}
 				options={["Paciente", "Médico", "Investidor", "Pesquisador"]}
 			/>
@@ -73,7 +74,7 @@ export default function ContactForm() {
 				<InputField
 					id={"name"}
 					label={"Nome"}
-					labelColor={"bg-custom-gray-08"}
+					labelColor={"bg-custom-gray-09"}
 					disabled={isSended}
 					required
 				/>
@@ -81,14 +82,14 @@ export default function ContactForm() {
 					id={"email"}
 					label={"E-mail"}
 					type={"email"}
-					labelColor={"bg-custom-gray-08"}
+					labelColor={"bg-custom-gray-09"}
 					disabled={isSended}
 					required
 				/>
 				<InputField
 					id={"cel"}
 					label={"Celular"}
-					labelColor={"bg-custom-gray-08"}
+					labelColor={"bg-custom-gray-09"}
 					regexFC={RegexTemplate.Cel}
 					disabled={isSended}
 					required
@@ -96,7 +97,7 @@ export default function ContactForm() {
 				<TextareaField
 					id={"message"}
 					label={"Mensagem"}
-					labelColor={"bg-custom-gray-08"}
+					labelColor={"bg-custom-gray-09"}
 					maxLength={256}
 					disabled={isSended}
 					required
