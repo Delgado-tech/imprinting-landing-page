@@ -1,9 +1,31 @@
 class LocalStorageControllers {
-	static time(): number {
-		const local = Number(localStorage.getItem("time"));
-		const time_now = new Date().getTime();
+	private static setData(count?: number) {
+		const local = localStorage;
+		if (count) {
+			const { turn } = this.getData();
+			localStorage.setItem("turn", JSON.stringify(turn + count));
+		} else {
+			const now = new Date().getTime();
+			local.setItem("turn", JSON.stringify(1));
+			local.setItem("time", JSON.stringify(now));
+		}
+	}
 
-		const result = (time_now - local) / 1000;
+	private static getData() {
+		const local = localStorage;
+		const items = {
+			time: Number(local.getItem("time")),
+			turn: Number(local.getItem("turn")),
+		};
+
+		return items;
+	}
+
+	static time(): number {
+		const { time } = this.getData();
+		const now = new Date().getTime();
+
+		const result = (now - time) / 1000;
 
 		const minutes = Math.floor(60 - ((result / 60) % 60));
 
@@ -11,26 +33,22 @@ class LocalStorageControllers {
 	}
 
 	static checkTime(): boolean {
-		const local = localStorage;
+		const { time, turn } = this.getData();
 
-		if (local.getItem("time") && local.getItem("turn")) {
-			const time_local = Number(local.getItem("time"));
-			const turn_local = Number(local.getItem("turn"));
-
-			const time_now = new Date().getTime();
-
-			if (turn_local < 3) {
-				local.setItem("turn", JSON.stringify(turn_local + 1));
-				return true;
-			} else if (time_now - time_local < 1) {
-				return true;
+		if (time > 0 && turn > 0) {
+			if (this.time() < 60) {
+				if (turn < 3) {
+					this.setData(1);
+					return true;
+				} else {
+					return false;
+				}
 			} else {
-				return false;
+				this.setData();
+				return true;
 			}
 		} else {
-			const time = new Date().getTime();
-			local.setItem("time", JSON.stringify(time));
-			local.setItem("turn", JSON.stringify(1));
+			this.setData();
 			return true;
 		}
 	}
