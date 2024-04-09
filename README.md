@@ -181,7 +181,7 @@ npm run start
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a [Licença MIT](https://github.com/Delgado-tech/tic-tac-toe-with-ia/blob/main/LICENSE).
+Este projeto está licenciado sob a [Licença MIT](https://github.com/Delgado-tech/imprinting-landing-page?tab=MIT-1-ov-file).
 
 
 ## Contribuidores
@@ -198,6 +198,6 @@ Se você tiver alguma dúvida ou sugestão, entre em contato clicando [aqui](mai
 
 ## 🔗 Links
 
-### Deploy: XXXXXX
+### Deploy: https://imprinting-dao.vercel.app/
 
  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00000080,50:161b2280,100:30363D9d&height=150&section=footer" width="100%">
