@@ -33,6 +33,10 @@ export default function Footer() {
 		},
 	];
 
+	const phone_country = import.meta.env.VITE_NUMERO_TELEFONE_PAIS ?? "XX";
+	const phone_ddd = import.meta.env.VITE_NUMERO_TELEFONE_PAIS ?? "XX";
+	const phone_number = import.meta.env.VITE_NUMERO_TELEFONE_PAIS ?? "XXXXXXXXX";
+
 	return (
 		<section className="bg-custom-black-02 p-8 font-poppins text-xl text-custom-gray-03 max-sm:text-sm">
 			<footer className="flex items-center justify-between gap-16 max-md:flex-col max-sm:items-start">
@@ -47,20 +51,16 @@ export default function Footer() {
 						Telefone:{" "}
 						<a
 							href={`https://api.whatsapp.com/send/?phone=${
-								import.meta.env.VITE_NUMERO_TELEFONE_PAIS +
-								import.meta.env.VITE_NUMERO_TELEFONE_DDD +
-								import.meta.env.VITE_NUMERO_TELEFONE
+								phone_country + phone_ddd + phone_number
 							}&text=${whatsappRedirectMessage}&type=phone_number&app_absent=0`}
 							target="_blank"
 							className="group/phone"
 						>
 							<span className="rounded-lg bg-custom-gray-09 p-1 text-lg font-medium text-custom-gray-02 max-sm:text-sm">
-								+{import.meta.env.VITE_NUMERO_TELEFONE_PAIS}
+								+{phone_country}
 							</span>{" "}
 							<span className="text-custom-gray-01 underline-offset-2 transition-all group-hover/phone:text-white group-hover/phone:underline">
-								({import.meta.env.VITE_NUMERO_TELEFONE_DDD}){" "}
-								{import.meta.env.VITE_NUMERO_TELEFONE.substring(0, 5)}-
-								{import.meta.env.VITE_NUMERO_TELEFONE.substring(5)}
+								({phone_ddd}) {phone_number.substring(0, 5)}-{phone_number.substring(5)}
 							</span>
 						</a>
 					</span>
