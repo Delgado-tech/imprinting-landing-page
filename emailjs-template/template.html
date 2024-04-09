@@ -1,0 +1,50 @@
+<div style="
+    font-family: 'Arial'; 
+    font-size: 16px; 
+    background-color: #D7DBDF;
+    padding: 80px 0;
+    width: 100%; 
+    height: fit-content;
+">
+    <div style="
+        background-color: white;
+        margin: 0 auto;
+        padding: 40px;
+        width: 70%;
+        max-width: 700px;
+        border-radius: 15px;
+    ">
+        <span style="font-size: 20px">ImprintingDAO</span>
+        <br><br><br>
+
+        <span>Uma pessoa demonstrou interesse dentro do site!</span>
+        <br><br>
+        <span>Dados do formulário:</span>
+
+        <div style="
+            padding-left: 32px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            margin-top: 12px;
+            border-left: 4px solid #D7DBDF 
+        ">
+            <p>Interesse como: <b style="color: #333399">{{interested_type}}</b></p>
+            <p>Nome: <b style="color: #333399">{{name}}</b></p>
+            <p>E-mail: <b style="color: #333399">{{email}}</b></p>
+            <p>Celular: <b style="color: #333399">{{cel}}</b></p>
+            <span>Mensagem:</span>
+            <div style="
+                margin-top: 12px;
+                padding-left: 32px;
+                border-left: 4px solid #D7DBDF;
+                word-wrap: break-word;
+            ">
+                <span>{{message}}</span>
+            </div>
+            <!-- espaço em branco -->
+            <p></p>
+        </div>
+        <p>Enviado em: <b style="color: #FF00CC">{{send_datetime}}</b></p>
+
+    </div>
+</div>
