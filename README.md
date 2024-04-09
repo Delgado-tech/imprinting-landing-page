@@ -95,7 +95,6 @@ VITE_EMAIL="contact@email.com.br"
 Para poder relacionar o formulário com seu email é necessário um intermediador, no caso o utilizado nesse projeto foi o emailJS, para realizar o vinculo
 entre no site e realize seu cadastro (https://dashboard.emailjs.com/sign-up).
 
-<br><br>
 
 Apos o cadastro, na página de dashboard na aba `Email Services` clique no botão `Add New Service`, selecione o serviço de email desejado,
 feito isso clique no botão de `Connect Account` e vincule seu e-mail, clique na caixa escrito `Service ID`, 
@@ -107,7 +106,7 @@ copie e cole na váriavel do arquivo `.env` chamada VITE_EMAILJS_SERVICE_ID, fei
 
 <br>
 
-Agora vá para a aba `Email Templates`
+Agora vá para a aba `Email Templates` e clique no botão `Create New Template`
 
 <br>
 
