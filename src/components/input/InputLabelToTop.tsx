@@ -32,7 +32,7 @@ export default function InputLabelToTop({
 			)}
 		>
 			<span
-				className={`absolute left-0 top-[calc(50%)] -z-10 h-[1px] w-full ${labelColor} group-data-[label-top=false]/label:bg-transparent`}
+				className={`absolute left-0 top-[calc(50%)] -z-10 h-[2px] w-full ${labelColor} group-data-[label-top=false]/label:bg-transparent`}
 			></span>
 			<label
 				className="z-20 cursor-text select-none text-sm font-medium sm:text-base"
