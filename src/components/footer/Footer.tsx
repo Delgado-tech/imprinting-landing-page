@@ -34,8 +34,8 @@ export default function Footer() {
 	];
 
 	const phone_country = import.meta.env.VITE_NUMERO_TELEFONE_PAIS ?? "XX";
-	const phone_ddd = import.meta.env.VITE_NUMERO_TELEFONE_PAIS ?? "XX";
-	const phone_number = import.meta.env.VITE_NUMERO_TELEFONE_PAIS ?? "XXXXXXXXX";
+	const phone_ddd = import.meta.env.VITE_NUMERO_TELEFONE_DDD ?? "XX";
+	const phone_number = import.meta.env.VITE_NUMERO_TELEFONE ?? "XXXXXXXXX";
 
 	return (
 		<section className="bg-custom-black-02 p-8 font-poppins text-xl text-custom-gray-03 max-sm:text-sm">
