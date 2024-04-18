@@ -29,12 +29,10 @@ export default function Targets() {
 				<Reveal delay={0.6}>
 					<ListItems
 						items={[
-							"Distribuição de 1 bilhão de tokens IMP a R$0,01 por cópia",
-							"Captação de R$ 10 milhões no primeiro lote",
-							"Captação de R$ 100 milhões para a consolidação da ONG em reconhecimento de operações em modelo OSCIP",
-							"Integração de co-fundadores excepcionais para impulsionar inovação e crescimento",
-							"Lançamento da Agência de soluções e tecnologias Ethereum Instituto Imprinting, democratizando serviços de alta qualidade globalmente",
-							`Distribuição dos tokens para os primeiros 20 pesquisadores associados ao programa "Eu Sou" através da Startup Tokeniza`,
+							"Democratizar o acesso a serviços de qualidade por transformar o cenário da saúde mental por meio da cooperação internacional descentralizada",
+							"Criar um futuro mais inclusivo e acessível através da abordagem IMP para a saúde mental por meio da tecnologia blockchain",
+							"Financiar a pesquisa e o desenvolvimento pelo IPO Humano que visa captar R$110 milhões de reais em 36 meses para pesquisa, desenvolvimento e integração de 1 milhão de pesquisadores multidisciplinares, 10 milhões de profissionais de saúde e 100 milhões de pacientes voluntários.",
+							"Lançar a Agência Imprinting Corp que fornecerá soluções e tecnologias Ethereum2 para democratizar o acesso a serviços de saúde mental de alta qualidade.",
 						]}
 						icon={<GoalIcon />}
 					/>
@@ -57,18 +55,16 @@ export default function Targets() {
 						distribuição do IMP estaremos aptos a:
 					</p>
 				</Reveal>
-				<Reveal delay={0.6}>
-					<ListItems
-						className="mt-4"
-						items={[
-							"Democratizar o acesso à saúde mental de qualidade",
-							"Garantir bem-estar social para todos os indivíduos",
-							"Promover a sustentabilidade ambiental",
-							"Gerar um impacto social positivo e duradouro",
-						]}
-						icon={<BadgeCheck />}
-					/>
-				</Reveal>
+				<ListItems
+					className="mt-4"
+					items={[
+						"Democratizar o acesso à saúde mental de qualidade",
+						"Garantir bem-estar social para todos os indivíduos",
+						"Promover a sustentabilidade ambiental",
+						"Gerar um impacto social positivo e duradouro",
+					]}
+					icon={<BadgeCheck />}
+				/>
 			</div>
 		</section>
 	);

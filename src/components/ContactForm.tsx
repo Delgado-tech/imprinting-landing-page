@@ -67,7 +67,12 @@ export default function ContactForm() {
 				label={"Interessado"}
 				labelColor={"bg-custom-gray-09"}
 				disabled={isSended}
-				options={["Paciente", "Médico", "Investidor", "Pesquisador"]}
+				options={[
+					"Paciente Voluntário",
+					"Profissional da Saúde",
+					"Investidor",
+					"Pesquisador",
+				]}
 			/>
 
 			<div className="flex flex-col gap-8">

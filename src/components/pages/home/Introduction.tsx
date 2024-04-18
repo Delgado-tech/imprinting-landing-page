@@ -16,10 +16,10 @@ export default function Introduction() {
 					</Reveal>
 					<Reveal delay={1}>
 						<p className="max-w-[700px] text-balance text-center text-lg text-zinc-50 md:text-2xl xl:text-start">
-							Somos uma DAO (Decentralized Autonomous Organization) dedicada à inovação
-							em neurobiologia, promovendo avanços em neuropsicofarmacologia e
-							neuroaprendizagem por meio de colaboração descentralizada e governança
-							autônoma.
+							Somos a 1° DAO (Decentralized Autonomous Organization) dedicada à
+							inovação Neurocientífica por meio do mapeamento e avanços significativos
+							em Neuro-psicofarmacologia e Neuro-aprendizagem Digital por meio de
+							colaboração descentralizada e governança autônoma
 						</p>
 					</Reveal>
 					<Reveal delay={1}>

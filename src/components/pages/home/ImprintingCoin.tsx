@@ -27,7 +27,7 @@ export default function ImprintingCoin() {
 						<Reveal delay={0.1}>
 							<p className="max-w-[1200px] text-center text-3xl text-white max-xl:text-2xl max-sm:text-center max-sm:text-lg">
 								Shows, congressos, feiras, eventos, imersões, conferências, intercâmbios
-								culturais, sociais, científicos e voluntários ao seu alcance
+								culturais, sociais, científicos e voluntários ao seu alcance.
 							</p>
 						</Reveal>
 						<Reveal delay={0.2}>

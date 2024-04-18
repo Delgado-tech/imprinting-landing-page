@@ -11,24 +11,27 @@ export default function Purpose() {
 	const cards: ICard[] = [
 		{
 			icon: <SearchIcon className="size-16 max-md:size-12" />,
-			title: "Pesquisa Neurocientifica",
-			content: "Inovação em Neuro-psicofarmacologia e Neuro-aprendizagem",
+			title: "Pesquisa Neurocientífica",
+			content:
+				"Estudos sobre o Imprinting e seu impacto na saúde mental, bem-estar e comportamento social",
+		},
+		{
+			icon: <UsersIcon className="size-16 max-md:size-12" />,
+			title: "Desenvolvimento Humano",
+			content:
+				"Programas de imersão profunda para autoconhecimento, cura e desenvolvimento pessoal",
 		},
 		{
 			icon: <BookMarkedIcon className="size-16 max-md:size-12" />,
-			title: "Educação Integrada",
+			title: "Educação Continuada",
 			content:
 				"Cursos e capacitações com IA, unindo conhecimentos ancestrais e neurociência",
 		},
 		{
 			icon: <HeartPulseIcon className="size-16 max-md:size-12" />,
-			title: "Saúde Inovadora",
-			content: "Hospital digital com telemedicina e gestão de saúde",
-		},
-		{
-			icon: <UsersIcon className="size-16 max-md:size-12" />,
-			title: "Desenvolvimento Humano Global",
-			content: "Rede global para mudança social",
+			title: "Impacto Social",
+			content:
+				"Promoção de soluções de saúde mental e bem-estar para comunidades carentes e grupos vulneráveis",
 		},
 	];
 
@@ -39,15 +42,18 @@ export default function Purpose() {
 		>
 			<Reveal>
 				<h2 className="text-center font-roboto text-3xl font-semibold text-custom-gray-06 md:text-5xl xl:text-start">
-					Nosso Propósito
+					Nossa Missão
 				</h2>
 			</Reveal>
 			<Reveal delay={0.2}>
 				<p className="max-w-[1000px] text-center text-lg text-custom-black md:text-2xl xl:text-start">
-					Exploramos terapias inovadoras, sendo elas psicodélicas, ligadas a ciência,
-					espiritualidade e filosofia. Comprovamos, por meio de evidências clínicas,
-					como abordagens como essas podem impulsionar o bem-estar mental, físico e
-					emocional de um indivíduo.
+					Nossa missão é desvendar o Fenômeno Imprinting, compreendendo seus impactos
+					no desenvolvimento humano, mapeando dados e impulsionando tecnologias para
+					tratar transtornos mentais. Empoderamos indivíduos na Era Web3, oferecendo
+					soluções inovadoras para cuidados com a saúde mental e democratizando o
+					acesso à informação. Além disso, geramos impacto social positivo,
+					promovendo um futuro mais saudável, reduzindo o estigma em torno da saúde
+					mental e promovendo a inclusão social.
 				</p>
 			</Reveal>
 			<div className="mt-8 grid w-full grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-4">

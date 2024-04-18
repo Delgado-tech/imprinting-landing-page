@@ -54,10 +54,12 @@ export class RegexTemplate {
 	}
 
 	static Cel(value: string): string {
-		value = value.substring(0, 15);
+		value = value.substring(0, 20);
 		value = value.replace(/\D/g, "");
-		value = value.replace(/(\d{2})(\d)/, "($1) $2");
-		value = value.replace(/(\d{5})(\d{4})$/, "$1-$2");
+		value = value.replace(/(\d{3})(\d)/, "+$1 $2");
+		value =
+			value.substring(0, 3) + value.substring(3).replace(/(\d{2})(\d)/, "($1) $2");
+		value = value.replace(/(\d{5})(\d{1,4})$/, "$1-$2");
 
 		return value;
 	}

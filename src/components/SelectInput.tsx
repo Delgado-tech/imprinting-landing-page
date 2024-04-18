@@ -106,7 +106,7 @@ export default function SelectInput({
 
 				<div
 					data-show={showDropDown}
-					className="absolute z-[100] w-full -translate-y-2 rounded-b-lg border border-t-0 border-custom-blue-01 bg-custom-gray-10
+					className="absolute z-[100] w-full -translate-y-2 rounded-b-lg border border-t-0 border-custom-blue-01 bg-custom-gray-09
 					p-2 shadow-sm data-[show=false]:hidden"
 				>
 					<div className="max-h-[200px] overflow-auto px-2 py-2 last:[&_span]:border-none">

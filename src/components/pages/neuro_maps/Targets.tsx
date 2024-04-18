@@ -19,21 +19,29 @@ export default function Targets() {
 							</h2>
 							<Reveal delay={1.2}>
 								<p>
-									O Hospital Digital NeuroMaps tem como objetivo primordial ampliar o
-									acesso a serviços de saúde de qualidade, especialmente para populações
-									em áreas remotas ou com recursos limitados.
+									<span className="text-custom-blue-02">
+										Ampliar o acesso a serviços de saúde mental de qualidade:
+									</span>{" "}
+									O NeuroMaps democratiza o acesso a cuidados especializados para
+									populações em áreas remotas ou com recursos limitados.
 								</p>
 							</Reveal>
 							<Reveal delay={1.4}>
 								<p>
-									Ao mesmo tempo, busca proporcionar uma experiência personalizada e
-									humanizada aos pacientes, considerando suas necessidades individuais.
+									<span className="text-custom-blue-02">
+										Proporcionar uma experiência personalizada e humanizada:
+									</span>{" "}
+									Cada paciente recebe atenção individualizada e acompanhamento contínuo
+									de profissionais qualificados.
 								</p>
 							</Reveal>
 							<Reveal delay={1.6}>
 								<p>
-									Além disso, o NeuroMaps está empenhado em promover o desenvolvimento
-									humano por meio da educação, pesquisa e inovação em saúde.
+									<span className="text-custom-blue-02">
+										Promover o desenvolvimento humano:
+									</span>{" "}
+									O NeuroMaps investe em educação, pesquisa e inovação para oferecer
+									soluções eficazes para os desafios da saúde mental.
 								</p>
 							</Reveal>
 						</div>
@@ -44,29 +52,31 @@ export default function Targets() {
 							</h2>
 							<Reveal delay={0.2}>
 								<p>
-									O Hospital Digital NeuroMaps oferece consultas e tratamentos remotos
-									conduzidos por médicos e profissionais de saúde qualificados,
-									utilizando videoconferência, chat e outras ferramentas online. Este
-									modelo permite acesso conveniente a cuidados de saúde de qualidade,
-									especialmente benéfico para pessoas em áreas remotas ou com
-									dificuldades de locomoção.
+									<span className="text-custom-blue-02">
+										Consultas e tratamentos remotos:
+									</span>{" "}
+									A plataforma oferece consultas online com médicos e profissionais de
+									saúde mental experientes, utilizando videoconferência, chat e outras
+									ferramentas digitais.
 								</p>
 							</Reveal>
 							<Reveal delay={0.4}>
 								<p>
-									Além disso, o hospital emprega monitoramento digital para coletar e
-									analisar dados de saúde dos pacientes em tempo real. Essa abordagem
-									permite acompanhar a evolução de sua condição médica e identificar
-									possíveis problemas de saúde de forma proativa.
+									<span className="text-custom-blue-02">
+										Monitoramento digital em tempo real:
+									</span>{" "}
+									O NeuroMaps coleta e analisa dados de saúde dos pacientes em tempo
+									real, permitindo um acompanhamento preciso da evolução da sua condição.
 								</p>
 							</Reveal>
 							<Reveal delay={0.6}>
 								<p>
-									Para complementar, o NeuroMaps oferece recursos de apoio ao paciente,
-									fornecendo acesso a informações sobre saúde, grupos de apoio e outras
-									ferramentas para ajudar os pacientes a gerenciar sua saúde de maneira
-									eficaz e informada. Essa abordagem holística visa promover o bem-estar
-									geral e garantir uma experiência de cuidado completa e integrada.
+									<span className="text-custom-blue-02">
+										Recursos de apoio ao paciente:
+									</span>{" "}
+									A plataforma oferece acesso a informações sobre saúde mental, grupos de
+									apoio e outras ferramentas para auxiliar os pacientes na gestão de sua
+									saúde.
 								</p>
 							</Reveal>
 						</div>

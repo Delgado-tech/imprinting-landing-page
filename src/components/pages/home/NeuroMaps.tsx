@@ -1,11 +1,12 @@
 import { BadgeCheck } from "lucide-react";
-import TextLink from "../../TextLink";
 import Reveal from "../../animations/Reveal";
 import Decoration from "../../decorations";
+import TextLink from "../../TextLink";
 
 export default function NeuroMaps() {
 	const resources = [
 		"Consultas e tratamentos a distância",
+		"Acolhimento Humanizado",
 		"Recursos de apoio ao paciente",
 		"Repositório de dados e informações",
 		"Monitoramento digital",
@@ -14,21 +15,25 @@ export default function NeuroMaps() {
 
 	return (
 		<section className="mt-64">
-			<div className="flex justify-center">
+			<div className="mb-12 flex justify-center">
 				<Reveal>
-					<div className="relative mb-12 flex w-fit flex-col items-center">
-						<Decoration.Waves className="absolute -left-28 -top-[70%] z-10 scale-[25%] sm:-left-32 sm:scale-50 xl:scale-75" />
-						<h2 className="font-poppins text-2xl font-medium text-custom-gray-03 max-xl:text-xl max-sm:text-lg">
-							Hospital Digital
-						</h2>
-						<h2 className="flex flex-col items-center font-poppins text-6xl font-semibold text-custom-gray-07 max-xl:text-5xl max-sm:text-3xl sm:flex-row sm:items-end sm:gap-2 xl:gap-4">
-							<span>NeuroMaps</span>
+					<div className="relative w-fit items-center">
+						<Decoration.Waves className="absolute -left-28 -top-[60%] z-10 scale-[25%] max-xl:-top-[80%] max-sm:-top-[65%] sm:-left-32 sm:scale-50 xl:scale-75" />
+						<div className="flex items-end gap-2 max-sm:flex-col max-sm:items-center">
+							<div className="flex flex-col items-center">
+								<h2 className="font-poppins text-2xl font-medium text-custom-gray-03 max-xl:text-xl max-sm:text-lg">
+									Hospital Digital
+								</h2>
+								<h2 className="flex flex-col items-center font-poppins text-6xl font-semibold text-custom-gray-07 max-xl:text-5xl max-sm:text-3xl sm:flex-row sm:items-end sm:gap-2 xl:gap-4">
+									<span>NeuroMaps</span>
+								</h2>
+							</div>
 							<TextLink
 								link="/neuro-maps"
 								content="ver mais"
 								className="text-2xl max-xl:text-xl max-sm:text-lg"
 							/>
-						</h2>
+						</div>
 					</div>
 				</Reveal>
 			</div>

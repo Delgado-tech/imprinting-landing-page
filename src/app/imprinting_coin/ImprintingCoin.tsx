@@ -18,9 +18,11 @@ export default function ImprintingCoinPage() {
 					<IntroductionBanner
 						title="Imprinting Coin"
 						subTitle="Criptomoeda"
-						content="Prepare-se para uma nova era na saúde mental e bem-estar social! O Instituto Imprinting,
-                                liderado pelo visionário Jônatas Alexsandro da Rosa Rodrigues, anuncia o primeiro IPO (Oferta Pública Inicial) Humano
-                                Imprinting Crypto Tech, abrindo caminho para um futuro mais promissor para todos."
+						content="A Imprinting DAO, a primeira Agência Crypto Tech focada no desenvolvimento
+							humano em saúde mental e bem-estar social, apresenta seu programa de IPO
+							Humano (Oferta Pública Inicial), promovido por meio do fomento à rede Ethereum2.
+							Este programa abre caminho para um futuro mais saudável, democrático, equitativo
+							e próspero."
 						className="from-custom-blue-02 to-custom-gray-09"
 						lightText
 					/>

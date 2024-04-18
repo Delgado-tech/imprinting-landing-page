@@ -18,7 +18,7 @@ export default function MoreThanACoin() {
 						<br />
 						<br />
 						Segurança, transparência e confiabilidade: Tokenizada na blockchain
-						Ethereum.
+						Ethereum2.
 						<br />
 						<br />
 						Empoderamento e transformação digital e social: Abrindo caminho para um

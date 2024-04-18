@@ -15,24 +15,25 @@ export default function Benefits() {
 						className: "rounded-lg bg-custom-gray-09",
 						title: "Acessibilidade",
 						content:
-							"Possibilidade de receber atendimento médico de qualidade sem precisar sair de casa.",
+							"O NeuroMaps facilita o acesso a cuidados de saúde mental para pessoas em qualquer lugar do mundo.",
 					},
 					{
 						className: "rounded-lg bg-custom-gray-09",
-						title: "Conveniência",
+						title: "Eficiência",
 						content:
-							"Agendamento de consultas, realização de exames e recebimento de resultados online.",
+							" A plataforma otimiza o tempo dos pacientes e profissionais, reduzindo custos e otimizando o processo de tratamento.",
 					},
 					{
 						className: "rounded-lg bg-custom-gray-09",
-						title: "Personalização",
-						content: "Planos de tratamento totalmente personalizados.",
-					},
-					{
-						className: "rounded-lg bg-custom-gray-09",
-						title: "Preço acessível",
+						title: "Qualidade",
 						content:
-							"Custos de tratamento mais baixos do que os serviços de saúde tradicionais.",
+							"A equipe do NeuroMaps é composta por profissionais altamente qualificados e experientes em saúde mental.",
+					},
+					{
+						className: "rounded-lg bg-custom-gray-09",
+						title: "Segurança",
+						content:
+							"A tecnologia blockchain garante a segurança e confidencialidade dos dados dos pacientes.",
 					},
 				]}
 			/>

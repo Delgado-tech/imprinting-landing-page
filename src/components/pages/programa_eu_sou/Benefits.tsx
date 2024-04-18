@@ -24,9 +24,12 @@ export default function Benefits() {
 							<>
 								Cada participante recebe{" "}
 								<span className="text-custom-beige-02">Imprinting Coins</span> como
-								reconhecimento por suas contribuições valiosas. Essa criptomoeda tem
-								várias utilidades, desde a aquisição de kits de tecnologia até a
-								cobertura total do programa!
+								reconhecimento por suas contribuições valiosas, através de uma estrutura
+								gamificada, é uma criptomoeda multifuncional, por permitir a aquisição
+								de kits de tecnologia e até a cobertura total do programa. Essa
+								iniciativa promove a integração na comunidade Imprinting, incentivando a
+								troca de experiências e o compartilhamento de conhecimentos para um
+								impacto positivo contínuo.
 								<br />
 								<br />
 								<Link
@@ -59,7 +62,7 @@ export default function Benefits() {
 								Os participantes terão acesso ao hospital digital{" "}
 								<span className="text-violet-400">NeuroMaps</span> que oferece
 								acolhimento humanizado em saúde e bem-estar por meio de soluções de
-								tecnologias inovadoras.
+								tecnologias inovadoras da era web3.
 								<br />
 								<br />
 								<Link
@@ -100,9 +103,9 @@ export default function Benefits() {
 						<ListItems
 							className="text-custom-pastel-pink [&>.icon]:text-custom-pink"
 							items={[
-								"Produção de mapas de evidências clínicas",
-								"Impulsionar atividades de pesquisa e desenvolvimento",
-								"Networking e colaboração entre profissionais e participantes",
+								"Contribuir com a produção de mapas de evidências clínicas",
+								"Apoiar a atividades de pesquisa e desenvolvimento na rede Ethereum2",
+								"Networking em rede global de cooperação social",
 							]}
 							icon={<BadgeCheck />}
 						/>

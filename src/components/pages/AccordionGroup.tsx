@@ -24,7 +24,7 @@ export default function AccordionGroup({
 	return (
 		<>
 			{accordionList.map((acc, index) => (
-				<Reveal key={index} delay={0.2 * index}>
+				<Reveal key={index}>
 					<Accordion
 						id={index}
 						defaultOpen={openId === index}

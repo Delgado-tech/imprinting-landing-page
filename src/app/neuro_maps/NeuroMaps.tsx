@@ -18,7 +18,10 @@ export default function NeuroMapsPage() {
 					<IntroductionBanner
 						title="NeuroMaps"
 						subTitle="Hospital Digital"
-						content="Uma plataforma que permite consultas remotas e monitoramento em tempo real, promovendo o bem-estar em união com os ODS da ONU."
+						content="Uma plataforma inovadora que oferece consultas
+							remotas e monitoramento em tempo real para promover o bem-estar mental e a
+							saúde social. Integrada à comunidade Ethereum2, a plataforma utiliza a tecnologia
+							blockchain para garantir segurança, transparência e confiabilidade."
 						className="from-custom-blue-02 to-custom-magenta-02"
 						lightText
 					/>

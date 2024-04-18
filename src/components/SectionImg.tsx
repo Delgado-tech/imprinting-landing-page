@@ -25,7 +25,7 @@ export default function SectionImg({
 			data-img-wrap-bottom={imgWrapBottom}
 			data-container={container}
 			className={twMerge(
-				"group/cardimg relative flex items-center gap-8 rounded-lg bg-custom-gray-09 data-[container=false]:bg-transparent data-[container=true]:p-8 data-[container=true]:shadow-md max-lg:flex-col-reverse max-lg:data-[img-wrap-bottom=true]:flex-col md:justify-between",
+				"group/cardimg relative flex items-center gap-8 rounded-lg bg-custom-gray-09 data-[container=false]:bg-transparent data-[container=true]:p-8 data-[container=true]:shadow-md max-lg:flex-col-reverse max-lg:data-[img-wrap-bottom=true]:flex-col md:justify-start md:data-[reverse=true]:justify-end",
 				className,
 			)}
 		>
