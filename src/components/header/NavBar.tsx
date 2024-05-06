@@ -27,13 +27,17 @@ export default function NavBar({ closeNavBarHandler = () => {} }: Props) {
 			content: "NeuroMaps",
 			link: "/neuro-maps",
 		},
+		{
+			content: "Comunidade Meta",
+			link: "/metaverso",
+		},
 	];
 
 	return (
 		<nav>
-			<ul className="flex items-center gap-8 max-sm:flex-col max-sm:pt-10 max-sm:group-data-[open-hamburger=false]:hidden">
+			<ul className="flex items-center gap-8 max-lg:flex-col max-lg:group-data-[open-hamburger=false]:hidden max-sm:pt-10">
 				{navItems.map((item, index) => (
-					<li key={index} className="group/item relative">
+					<li key={index} className="group/item relative text-center">
 						<Link
 							to={item.link}
 							onClick={() => {
@@ -46,7 +50,7 @@ export default function NavBar({ closeNavBarHandler = () => {} }: Props) {
 								}, 600);
 								closeNavBarHandler();
 							}}
-							className="font-poppins text-lg uppercase text-custom-gray-06 transition-all hover:text-custom-gray-02 xl:text-xl"
+							className="font-poppins text-base uppercase text-custom-gray-06 transition-all hover:text-custom-gray-02 max-lg:text-lg xl:text-xl"
 						>
 							{item.content}
 						</Link>
